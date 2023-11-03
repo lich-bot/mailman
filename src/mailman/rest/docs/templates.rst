@@ -524,6 +524,11 @@ below.  Here are all the supported template names:
 * ``list:member:regular:footer``
     The footer for a regular (non-digest) message.
 
+    * ``<archiver_name>_url`` - a link to the archived message for each enabled
+      archiver other than prototype. For example if the HyperKitty archiver is
+      enabled for the list, ``${hyperkitty_url}`` will point to the message in
+      HyperKitty.
+
     When personalized deliveries are enabled, these substitution variables are
     also defined:
 
@@ -536,14 +541,15 @@ below.  Here are all the supported template names:
     * ``user_name_or_email`` - the recipient's display name if available,
       or their email address if no display name
       (e.g. "Anne Person", "Bart", or "fperson@example.com")
-    * ``<archiver_name>_url`` - a link to the archived message for each enabled
-      archiver other than prototype. For example if the HyperKitty archiver is
-      enabled for the list, ``${hyperkitty_url}`` will point to the message in
-      HyperKitty.
 
 * ``list:member:regular:header``
     The header for a regular (non-digest) message.
 
+    * ``<archiver_name>_url`` - a link to the archived message for each enabled
+      archiver other than prototype. For example if the HyperKitty archiver is
+      enabled for the list, ``${hyperkitty_url}`` will point to the message in
+      HyperKitty.
+
     When personalized deliveries are enabled, these substitution variables are
     also defined:
 
@@ -556,10 +562,6 @@ below.  Here are all the supported template names:
     * ``user_name_or_email`` - the recipient's display name if available,
       or their email address if no display name
       (e.g. "Anne Person", "Bart", or "fperson@example.com")
-    * ``<archiver_name>_url`` - a link to the archived message for each enabled
-      archiver other than prototype. For example if the HyperKitty archiver is
-      enabled for the list, ``${hyperkitty_url}`` will point to the message in
-      HyperKitty.
 
 * ``list:user:action:invite``
     The message sent to subscribers when they are invited to join a List.

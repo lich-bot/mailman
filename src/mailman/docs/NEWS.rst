@@ -18,6 +18,8 @@ Bugs fixed
 ----------
 * The ``mailman members`` command will now fall back to the member's user
   record display_name if the address record has none.  (Closes #1107)
+* The user_name_or_email substitution in regular header/footer templates now
+  works (Closes #1108)
 
 .. _news-3.3.9:
 

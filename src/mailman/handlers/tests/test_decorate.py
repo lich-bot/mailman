@@ -209,7 +209,7 @@ This is a test message.
         member.preferences.preferred_language = 'en'
         msgdata = dict(member=member)
         decorate.process(self._mlist, self._msg, msgdata)
-        self.assertIn('Anne Person',
+        self.assertIn('\nAnne Person',
                       self._msg.as_string())
 
     def test_decorate_user_name_or_address_as_address(self):
@@ -228,7 +228,45 @@ This is a test message.
         member.preferences.preferred_language = 'en'
         msgdata = dict(member=member)
         decorate.process(self._mlist, self._msg, msgdata)
-        self.assertIn('aperson@example.com',
+        self.assertIn('\naperson@example.com',
+                      self._msg.as_string())
+
+    def test_decorate_user_name_or_email_as_user_name(self):
+        site_dir = os.path.join(config.TEMPLATE_DIR, 'site', 'en')
+        os.makedirs(site_dir)
+        footer_path = os.path.join(site_dir, 'myfooter.txt')
+        with open(footer_path, 'w', encoding='utf-8') as fp:
+            print('$user_name_or_email', file=fp)
+        getUtility(ITemplateManager).set(
+            'list:member:regular:footer', None, 'mailman:///myfooter.txt')
+        self._mlist.preferred_language = 'en'
+        user = getUtility(IUserManager).make_user(
+            'aperson@example.com', 'Anne Person')
+        member = Member(MemberRole.member, self._mlist.list_id, user)
+        member.preferences = Preferences()
+        member.preferences.preferred_language = 'en'
+        msgdata = dict(member=member)
+        decorate.process(self._mlist, self._msg, msgdata)
+        self.assertIn('\nAnne Person',
+                      self._msg.as_string())
+
+    def test_decorate_user_name_or_email_as_address(self):
+        site_dir = os.path.join(config.TEMPLATE_DIR, 'site', 'en')
+        os.makedirs(site_dir)
+        footer_path = os.path.join(site_dir, 'myfooter.txt')
+        with open(footer_path, 'w', encoding='utf-8') as fp:
+            print('$user_name_or_email', file=fp)
+        getUtility(ITemplateManager).set(
+            'list:member:regular:footer', None, 'mailman:///myfooter.txt')
+        self._mlist.preferred_language = 'en'
+        user = getUtility(IUserManager).make_user(
+            'aperson@example.com')
+        member = Member(MemberRole.member, self._mlist.list_id, user)
+        member.preferences = Preferences()
+        member.preferences.preferred_language = 'en'
+        msgdata = dict(member=member)
+        decorate.process(self._mlist, self._msg, msgdata)
+        self.assertIn('\naperson@example.com',
                       self._msg.as_string())
 
     def test_decorate_header_footer_with_bad_character_mpa(self):

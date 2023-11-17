@@ -48,6 +48,7 @@ from mailman.rest.validator import (
     enum_validator,
     integer_ge_zero_validator,
     language_validator,
+    list_of_emails_or_regexp_or_atlist_validator,
     list_of_emails_or_regexp_validator,
     list_of_strings_validator,
     PatchValidator,
@@ -166,7 +167,8 @@ def no_newlines_validator(value):
 
 ATTRIBUTES = dict(
     acceptable_aliases=AcceptableAliases(list_of_strings_validator),
-    accept_these_nonmembers=GetterSetter(list_of_emails_or_regexp_validator),
+    accept_these_nonmembers=GetterSetter(
+        list_of_emails_or_regexp_or_atlist_validator),
     admin_immed_notify=GetterSetter(as_boolean),
     admin_notify_mchanges=GetterSetter(as_boolean),
     administrivia=GetterSetter(as_boolean),

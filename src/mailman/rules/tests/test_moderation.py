@@ -138,6 +138,62 @@ A message body.
                       'accept_these_nonmembers for test.example.com: '
                       'nothing to repeat', mark.readline())
 
+    def test_these_nonmembers_bad_at_list(self):
+        mark = LogFileMark('mailman.error')
+        user_manager = getUtility(IUserManager)
+        nonmembers = [
+            # Bad at_lists should be skipped
+            '@notalist',
+            'anne@example.com',
+            ]
+        rule = moderation.NonmemberModeration()
+        user_manager = getUtility(IUserManager)
+        user_manager.create_address('anne@example.com')
+        setattr(self._mlist, 'accept_these_nonmembers', nonmembers)
+        msg = mfs("""\
+From: anne@example.com
+To: test@example.com
+Subject: A test message
+Message-ID: <ant>
+MIME-Version: 1.0
+
+A message body.
+""")
+        msgdata = {}
+        result = rule.check(self._mlist, msg, msgdata)
+        self.assertFalse(result, 'NonmemberModeration rule should not hit')
+        self.assertIn("Bad at_list '@notalist' in "
+                      'accept_these_nonmembers for test.example.com: '
+                      'No such list', mark.readline())
+
+    def test_these_nonmembers_self_at_list(self):
+        mark = LogFileMark('mailman.error')
+        user_manager = getUtility(IUserManager)
+        nonmembers = [
+            # Bad at_lists should be skipped
+            '@test@example.com',
+            'anne@example.com',
+            ]
+        rule = moderation.NonmemberModeration()
+        user_manager = getUtility(IUserManager)
+        user_manager.create_address('anne@example.com')
+        setattr(self._mlist, 'accept_these_nonmembers', nonmembers)
+        msg = mfs("""\
+From: anne@example.com
+To: test@example.com
+Subject: A test message
+Message-ID: <ant>
+MIME-Version: 1.0
+
+A message body.
+""")
+        msgdata = {}
+        result = rule.check(self._mlist, msg, msgdata)
+        self.assertFalse(result, 'NonmemberModeration rule should not hit')
+        self.assertIn("Bad at_list '@test@example.com' in "
+                      'accept_these_nonmembers for test.example.com: '
+                      "Can't reference own list.", mark.readline())
+
     def test_these_nonmembers(self):
         # Test the legacy *_these_nonmembers attributes.
         actions = {
@@ -180,6 +236,53 @@ A message body.
                 self.assertEqual(
                     msgdata['member_moderation_action'], action_name,
                     'Wrong action for {}: {}'.format(address, action_name))
+
+    def test_accept_these_nonmembers_at_list(self):
+        # Test the legacy @fqdn_listname feature.
+        rule = moderation.NonmemberModeration()
+        user_manager = getUtility(IUserManager)
+        setattr(self._mlist,
+                'accept_these_nonmembers', ['@bee@example.com'])
+        olist = create_list('bee@example.com')
+        anne = user_manager.create_address('anne@example.com')
+        olist.subscribe(anne, MemberRole.member)
+        msg = mfs("""\
+From: anne@example.com
+To: test@example.com
+Subject: A test message
+Message-ID: <ant>
+MIME-Version: 1.0
+
+A message body.
+""")
+        msgdata = {}
+        result = rule.check(self._mlist, msg, msgdata)
+        self.assertFalse(result, 'NonmemberModeration rule should miss')
+
+    def test_accept_these_nonmembers_not_in_at_list(self):
+        # Test the legacy @fqdn_listname feature.
+        rule = moderation.NonmemberModeration()
+        setattr(self._mlist,
+                'accept_these_nonmembers', ['@bee@example.com'])
+        user_manager = getUtility(IUserManager)
+        user_manager.create_address('anne@example.com')
+        create_list('bee@example.com')
+        msg = mfs("""\
+From: anne@example.com
+To: test@example.com
+Subject: A test message
+Message-ID: <ant>
+MIME-Version: 1.0
+
+A message body.
+""")
+        msgdata = {}
+        result = rule.check(self._mlist, msg, msgdata)
+        self.assertTrue(result, 'NonmemberModeration rule should hit')
+        self.assertIn('member_moderation_action', msgdata)
+        self.assertEqual(
+                    msgdata['member_moderation_action'], 'hold',
+                    'Wrong action for anne@example.com: hold')
 
     def test_specific_nonmember_action_trumps_legacy(self):
         # A specific nonmember.moderation_action trumps *_these_nonmembers.

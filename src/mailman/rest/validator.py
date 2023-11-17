@@ -142,6 +142,17 @@ def list_of_emails_or_regexp_validator(values):
 
 
 @public
+def list_of_emails_or_regexp_or_atlist_validator(values):
+    if values == '':
+        return []
+    if not isinstance(values, (list, tuple)):
+        values = [values]
+    for value in values:
+        email_or_regexp_or_atlist_validator(value)
+    return values
+
+
+@public
 def integer_ge_zero_validator(value):
     """Validate that the value is a non-negative integer."""
     value = int(value)
@@ -191,6 +202,39 @@ def email_or_regexp_validator(value):
         raise ValueError(
             'Expected a valid email address or regular expression,'
             ' got {}'.format(value))
+
+
+@public
+def email_or_regexp_or_atlist_validator(value):
+    """ Email or regular expression or @list validator
+
+    Validate that the value is not null and is a valid regular expression or
+     email or @fqdn_listname.
+    """
+    if not value:
+        raise ValueError(
+            'Expected a valid email address, regular expression or '
+            '@fqdn_listname, got empty')
+    valid = True
+    # A string starts with ^ will be regarded as regex.
+    if value.startswith('^'):
+        try:
+            regexp_validator(value)
+        except ValueError:
+            valid = False
+    # A string starting with @ is a list posting address.
+    elif value.startswith('@'):
+        # Just validate the posting address as an email.
+        valid = getUtility(IEmailValidator).is_valid(value[1:])
+    else:
+        valid = getUtility(IEmailValidator).is_valid(value)
+
+    if valid:
+        return value
+    else:
+        raise ValueError(
+            'Expected a valid email address, regular expression or '
+            '@fqdn_listname, got {}'.format(value))
 
 
 @public

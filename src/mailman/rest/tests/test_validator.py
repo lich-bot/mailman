@@ -31,6 +31,7 @@ from mailman.rest.validator import (
     email_validator,
     enum_validator,
     integer_ge_zero_validator,
+    list_of_emails_or_regexp_or_atlist_validator,
     list_of_emails_or_regexp_validator,
     list_of_emails_validator,
     list_of_strings_validator,
@@ -170,6 +171,29 @@ class TestValidators(unittest.TestCase):
         self.assertRaises(
             ValueError, list_of_emails_or_regexp_validator,
             ['foo@example.com', '^*@example.com'])
+
+    def test_list_of_emails_or_regexp_or_atlist_validator_valid(self):
+        self.assertEqual(
+            list_of_emails_or_regexp_or_atlist_validator(
+                ['foo@example.com', '^.*@example.com', '@bar@example.com']),
+            ['foo@example.com', '^.*@example.com', '@bar@example.com'])
+        self.assertEqual(
+            list_of_emails_or_regexp_or_atlist_validator([]), [])
+        self.assertEqual(
+            list_of_emails_or_regexp_or_atlist_validator(''), [])
+
+    def test_list_of_emails_or_regexp_or_atlist_validator_invalid(self):
+        self.assertRaises(
+            ValueError, list_of_emails_or_regexp_or_atlist_validator,
+            'foo.example.com')
+        self.assertRaises(
+            ValueError, list_of_emails_or_regexp_or_atlist_validator,
+            ['foo@example.com', '^*@example.com'])
+        self.assertRaises(
+            ValueError, list_of_emails_or_regexp_or_atlist_validator,
+            ['foo@example.com', '^.*@example.com', '@bar.example.com'])
+        self.assertRaises(
+            ValueError, list_of_emails_or_regexp_or_atlist_validator, None)
 
     def test_email_validator(self):
         self.assertRaises(ValueError,

@@ -581,22 +581,25 @@ def import_config_pck(mlist, config_dict):
         import_roster(mlist, config_dict, config_dict.get('moderator', []),
                       MemberRole.moderator)
         # Now import the '*_these_nonmembers' properties, filtering out the
-        # regexps which will remain in the property.
+        # regexps and '@list' entries which will remain in the property.
         for action_name in ('accept', 'hold', 'reject', 'discard'):
             prop_name = '{}_these_nonmembers'.format(action_name)
             emails = [addr
                       for addr in config_dict.get(prop_name, [])
-                      if not addr.startswith('^')]
+                      if not addr[0] in ('^', '@')]
             # MM 2.1 accept maps to MM 3 defer
             if action_name == 'accept':
                 action_name = 'defer'
             import_roster(mlist, config_dict, emails, MemberRole.nonmember,
                           Action[action_name])
-            # Now add the regexes in the legacy list property.
+            # Now add the regexes and @lists in the legacy list property.
             list_prop = getattr(mlist, prop_name)
             for addr in config_dict.get(prop_name, []):
                 if addr.startswith('^'):
                     list_prop.append(addr)
+                elif addr.startswith('@') and action_name == 'defer':
+                    # This needs to be a fqdn-listname.
+                    list_prop.append(f'{addr}@{mlist.mail_host}')
     finally:
         mlist.send_welcome_message = send_welcome_message
         mlist.admin_notify_mchanges = admin_notify_mchanges

@@ -25,12 +25,16 @@ from mailman.core.i18n import _
 from mailman.interfaces.action import Action
 from mailman.interfaces.address import InvalidEmailAddressError
 from mailman.interfaces.bans import IBanManager
+from mailman.interfaces.listmanager import IListManager
 from mailman.interfaces.member import MemberRole
 from mailman.interfaces.rules import IRule
 from mailman.interfaces.usermanager import IUserManager
 from public import public
 from zope.component import getUtility
 from zope.interface import implementer
+
+
+log = logging.getLogger('mailman.error')
 
 
 def _find_sender_member(mlist, msg):
@@ -185,6 +189,7 @@ class NonmemberModeration:
                 for addr in checklist:
                     try:
                         if ((addr.startswith('^') and re.match(addr, sender))
+                                or _at_list(mlist, action_name, addr, sender)
                                 or addr == sender):     # noqa: W503
                             # accept_these_nonmembers should 'defer'.
                             if action_name == 'accept':
@@ -200,7 +205,6 @@ class NonmemberModeration:
                     except re.error as error:
                         # The pattern is a malformed regular expression.
                         # Log and continue with the next pattern.
-                        log = logging.getLogger('mailman.error')
                         log.error("Invalid regexp '{}' in "
                                   '{}_these_nonmembers for {}: {}'
                                   .format(addr, action_name, mlist.list_id,
@@ -210,3 +214,29 @@ class NonmemberModeration:
             # sender - continue
         action = mlist.default_nonmember_action
         return _do_action(msgdata, action, sender)
+
+
+def _at_list(mlist, action_name, addr, sender):
+    # Check for the @fqdn_listname in accept_these_nonmembers.
+    if action_name != 'accept':
+        # at_list is only for accept_these_nonmembers.
+        return False
+    if not addr.startswith('@'):
+        # Not an at_list
+        return False
+    if addr[1:] == mlist.fqdn_listname:
+        msg = "Can't reference own list."
+    else:
+        olist = getUtility(IListManager).get_by_fqdn(addr[1:])
+        if olist is None:
+            msg = 'No such list'
+        else:
+            if sender in [member.address.email for
+                          member in olist.members.members]:
+                return True
+            else:
+                return False
+    log.error("Bad at_list '{}' in "
+              '{}_these_nonmembers for {}: {}'
+              .format(addr, action_name, mlist.list_id, msg))
+    return False

@@ -1110,6 +1110,7 @@ class TestRosterImport(unittest.TestCase):
             'accept_these_nonmembers': [
                 'gene@example.com',
                 '^gene-.*@example.com',
+                '@list',
                 ],
             'hold_these_nonmembers': [
                 'homer@example.com',
@@ -1346,8 +1347,15 @@ class TestRosterImport(unittest.TestCase):
             list_prop = getattr(
                 self._mlist,
                 '{}_these_nonmembers'.format(action.name))
-            self.assertEqual(len(list_prop), 1)
-            self.assertTrue(all(addr.startswith('^') for addr in list_prop))
+            if action == Action.accept:
+                self.assertEqual(len(list_prop), 2)
+                self.assertTrue(
+                    all(addr[0] in ('^', '@') for addr in list_prop))
+                self.assertIn('@list@example.com', list_prop)
+            else:
+                self.assertEqual(len(list_prop), 1)
+                self.assertTrue(
+                    all(addr.startswith('^') for addr in list_prop))
 
     def test_nonmember_following_member(self):
         self._pckdict['hold_these_nonmembers'] = [

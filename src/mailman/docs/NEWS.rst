@@ -21,6 +21,12 @@ Bugs fixed
 * The user_name_or_email substitution in regular header/footer templates now
   works (Closes #1108)
 
+New Features
+------------
+* One can now add entries like ``@list@example.com`` to the
+  ``accept_these_nonmembers`` attribute of a list to accept nonmember posts
+  from members of another list.  (Closes #794)
+
 .. _news-3.3.9:
 
 3.3.9

@@ -1,0 +1,69 @@
+[tool.pdm]
+package-dir = "src"
+
+[project]
+name = "mailman"
+dynamic = ["version"]
+description = "Mailman -- the GNU mailing list manager"
+keywords = ["email"]
+readme = "README.rst"
+authors = [
+    {name = "The Mailman Developers", email = "mailman-developers@python.org"},
+]
+classifiers = [
+    "Development Status :: 5 - Production/Stable",
+    "Intended Audience :: System Administrators",
+    "License :: OSI Approved :: GNU General Public License v3 or later (GPLv3+)",
+    "Operating System :: POSIX",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.7",
+    "Programming Language :: Python :: 3.8",
+    "Programming Language :: Python :: 3.9",
+    "Topic :: Communications :: Email :: Mailing List Servers",
+    "Topic :: Communications :: Usenet News",
+    "Topic :: Internet :: WWW/HTTP :: WSGI :: Application",
+]
+dependencies = [
+    "aiosmtpd>=1.4.3",
+    "alembic>=1.6.2,!=1.7.0",
+    "atpublic",
+    "authheaders>=0.15.2",
+    "authres>=1.0.1",
+    "click>=8.0.0",
+    "dnspython>=1.14.0",
+    "falcon>=3.0.0",
+    "flufl.bounce>=4.0",
+    "flufl.i18n>=3.2",
+    "flufl.lock>=5.1",
+    "gunicorn",
+    "lazr.config",
+    "passlib",
+    "python-dateutil>=2.0",
+    "requests",
+    "sqlalchemy>=1.4.0",
+    "zope.component",
+    "zope.configuration",
+    "zope.event",
+    "zope.interface>=5.0",
+]
+license = {text = "GPLv3"}
+requires-python = ">=3.9"
+
+[project.urls]
+Homepage = "https://www.list.org"
+Documentation = "https://docs.mailman3.org/projects/mailman/en/latest/README.html"
+Source = "https://gitlab.com/mailman/mailman.git"
+Tracker = "https://gitlab.com/mailman/mailman/-/issues"
+
+[project.scripts]
+mailman = "mailman.bin.mailman:main"
+master = "mailman.bin.master:main"
+runner = "mailman.bin.runner:main"
+
+[build-system]
+requires = ["pdm-backend"]
+build-backend = "pdm.backend"
+
+[tool.pdm.version]
+source = "file"
+path = "src/mailman/version.py"

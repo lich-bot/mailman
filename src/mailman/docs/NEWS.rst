@@ -27,6 +27,13 @@ New Features
   ``accept_these_nonmembers`` attribute of a list to accept nonmember posts
   from members of another list.  (Closes #794)
 
+
+Packaging
+---------
+* Migrate to using the new standard `pyproject.toml` for Python packaging
+  instead of setup.py. This also moves from setuptools to pdm to be used
+  as the build backend.
+
 .. _news-3.3.9:
 
 3.3.9

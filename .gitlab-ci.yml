@@ -45,6 +45,10 @@ sqlite-311:
   script:
     - tox -e py311-nocov
 
+sqlite-312:
+  <<: *only-default
+  script:
+    - tox -e py312-nocov
 
 pgsql-310:
   <<: *only-default

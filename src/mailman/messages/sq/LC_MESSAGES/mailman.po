@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2022-03-14 11:45-0700\n"
-"PO-Revision-Date: 2023-08-03 22:40+0000\n"
+"PO-Revision-Date: 2024-01-06 11:06+0000\n"
 "Last-Translator: Besnik Bleta <besnik@programeshqip.org>\n"
 "Language-Team: Albanian <https://hosted.weblate.org/projects/gnu-mailman/"
 "mailman/sq/>\n"
@@ -17,7 +17,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Weblate 5.0-dev\n"
+"X-Generator: Weblate 5.4-dev\n"
 
 #: src/mailman/app/bounces.py:76 src/mailman/app/moderator.py:85
 #: src/mailman/chains/hold.py:163 src/mailman/handlers/acknowledge.py:56
@@ -33,11 +33,11 @@ msgstr "[S’ka hollësi kthimesh]"
 #: src/mailman/app/bounces.py:230
 #, python-brace-format
 msgid "${mlist.display_name} mailing list probe message"
-msgstr ""
+msgstr "Mesazh prove liste postimesh ${mlist.display_name}"
 
 #: src/mailman/app/bounces.py:266
 msgid "Uncaught bounce notification"
-msgstr ""
+msgstr "Njoftim kthimi që s’u pikas"
 
 #: src/mailman/app/membership.py:147
 #, python-brace-format
@@ -49,6 +49,9 @@ msgid ""
 "The content of this message was lost. It was probably cross-posted to\n"
 "multiple lists and previously handled on another list.\n"
 msgstr ""
+"Lënda e këtij mesazhi humbi. Ka shumë mundësi të jetë postuar\n"
+"në\n"
+"disa lista dhe trajtuar më herët në një listë tjetër.\n"
 
 #: src/mailman/app/moderator.py:132
 #, python-brace-format

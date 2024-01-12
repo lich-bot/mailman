@@ -6,19 +6,19 @@
 
     $user_email
 
-Прежде чем GNU Mailman обработает отписку, потребуется Ваше одобрение.
+Прежде чем GNU Mailman обработает отписку, потребуется ваше одобрение.
 Вы можете подтвердить операцию ответом на это письмо.
 
-Or you should include the following line -- and only the following
-line -- in a message to $request_email:
+Или вам следует включить следующую строку (и только следующую строку)
+в сообщение на адрес $request_email:
 
     confirm $token
 
-Note that simply sending a `reply' to this message should work from
-most mail readers.
+Обратите внимание, что для большинства программ чтения почты достаточно
+просто отправить «ответ» на это сообщение.
 
-If you do not wish to unsubscribe this email address, simply disregard this
-message.  If you think you are being maliciously unsubscribed from the list,
-or have any other questions, you may contact
+Если вы не хотите отписываться от этой рассылки, просто проигнорируйте
+это сообщение.  Если вы считаете, что вас злонамеренно отписываются на список, или у вас
+есть какие-либо другие вопросы, вы можете связаться с
 
     $owner_email

@@ -7,11 +7,10 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-03-14 11:45-0700\n"
+"POT-Creation-Date: 2024-01-12 11:40-0800\n"
 "PO-Revision-Date: 2022-12-13 17:51+0000\n"
 "Last-Translator: Neko Nekowazarashi <kodra@nekoweb.my.id>\n"
-"Language-Team: Indonesian <https://hosted.weblate.org/projects/gnu-mailman/"
-"mailman/id/>\n"
+"Language-Team: Indonesian <https://hosted.weblate.org/projects/gnu-mailman/mailman/id/>\n"
 "Language: id\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -19,8 +18,9 @@ msgstr ""
 "Plural-Forms: nplurals=1; plural=0;\n"
 "X-Generator: Weblate 4.15-dev\n"
 
-#: src/mailman/app/bounces.py:76 src/mailman/app/moderator.py:85 src/mailman/chains/hold.py:163
-#: src/mailman/handlers/acknowledge.py:56 src/mailman/handlers/subject_prefix.py:45
+#: src/mailman/app/bounces.py:76 src/mailman/app/moderator.py:85
+#: src/mailman/chains/hold.py:163 src/mailman/handlers/acknowledge.py:56
+#: src/mailman/handlers/subject_prefix.py:46
 #: src/mailman/handlers/subject_prefix.py:91 src/mailman/runners/digest.py:88
 msgid "(no subject)"
 msgstr "(tidak ada subjek)"
@@ -47,48 +47,45 @@ msgstr "pemberitahuan pembatalan langganan ${mlist.display_name}"
 msgid ""
 "The content of this message was lost. It was probably cross-posted to\n"
 "multiple lists and previously handled on another list.\n"
-msgstr ""
-"Konten pesan ini hilang. Mungkin di pos-silang ke berbagai milis dan "
-"sebelumnya ditangani oleh milis lain.\n"
+msgstr "Konten pesan ini hilang. Mungkin di pos-silang ke berbagai milis dan sebelumnya ditangani oleh milis lain.\n"
 
-#: src/mailman/app/moderator.py:132
+#: src/mailman/app/moderator.py:133
 #, python-brace-format
 msgid "Posting of your message titled \"${subject}\""
 msgstr "Pos pesan Anda yang berjudul \"${subject}\""
 
-#: src/mailman/app/moderator.py:133 src/mailman/app/moderator.py:267 src/mailman/rest/sub_moderation.py:119
+#: src/mailman/app/moderator.py:134 src/mailman/app/moderator.py:278
+#: src/mailman/rest/sub_moderation.py:119
 msgid "[No reason given]"
 msgstr "[Tidak ada alasan yang diberikan]"
 
-#: src/mailman/app/moderator.py:184
+#: src/mailman/app/moderator.py:185
 msgid "Forward of moderated message"
 msgstr "Penerusan dari pesan yang dimoderasi"
 
-#: src/mailman/app/moderator.py:233
+#: src/mailman/app/moderator.py:244
 #, python-brace-format
 msgid "New unsubscription request from ${mlist.display_name} by ${email}"
-msgstr ""
-"Permintaan membatalkan langganan baru dari ${mlist.display_name} oleh "
-"${email}"
+msgstr "Permintaan membatalkan langganan baru dari ${mlist.display_name} oleh ${email}"
 
-#: src/mailman/app/moderator.py:266
+#: src/mailman/app/moderator.py:277
 msgid "Unsubscription request"
 msgstr "Permintaan membatalkan langganan"
 
-#: src/mailman/app/moderator.py:307
+#: src/mailman/app/moderator.py:318
 msgid "Original Message"
 msgstr "Pesan Asli"
 
-#: src/mailman/app/moderator.py:310
+#: src/mailman/app/moderator.py:321
 #, python-brace-format
 msgid "Request to mailing list \"${display_name}\" rejected"
 msgstr "Permintaan ke milis \"${display_name}\" ditolak"
 
-#: src/mailman/app/notifications.py:94
+#: src/mailman/app/notifications.py:93
 msgid " (Digest mode)"
 msgstr " (Mode ringkasan)"
 
-#: src/mailman/app/notifications.py:98
+#: src/mailman/app/notifications.py:97
 #, fuzzy, python-brace-format
 msgid "Welcome to the \"${mlist.display_name}\" mailing list${digmode}"
 msgstr "Selamat datang di milis \"${mlist.display_name}\"${digmode}"
@@ -116,56 +113,46 @@ msgstr "skor status pengiriman ${member} bertambah di ${mlist.display_name}"
 #: src/mailman/app/notifications.py:227
 #, python-brace-format
 msgid "${member} unsubscribed from ${mlist.display_name} mailing list due to bounces"
-msgstr ""
-"${member} dibatalkan langganan dari ${mlist.display_name} karena galat "
-"pengiriman"
+msgstr "${member} dibatalkan langganan dari ${mlist.display_name} karena galat pengiriman"
 
 #: src/mailman/app/notifications.py:254
 #, python-brace-format
 msgid "Your subscription for ${mlist.display_name} mailing list has been disabled"
 msgstr "Langganan Anda pada milis ${mlist.display_name} telah dinonaktifkan"
 
-#: src/mailman/app/subscriptions.py:334
+#: src/mailman/app/subscriptions.py:328
 #, python-brace-format
 msgid "New subscription request to ${self.mlist.display_name} from ${self.address.email}"
-msgstr ""
-"Permintaan langganan untuk ${self.mlist.display_name} dari ${self.address."
-"email}"
+msgstr "Permintaan langganan untuk ${self.mlist.display_name} dari ${self.address.email}"
 
-#: src/mailman/app/subscriptions.py:502
+#: src/mailman/app/subscriptions.py:497
 #, python-brace-format
 msgid "New unsubscription request to ${self.mlist.display_name} from ${self.address.email}"
-msgstr ""
-"Permintaan membatalkan langganan untuk ${self.mlist.display_name} dari ${self"
-".address.email}"
+msgstr "Permintaan membatalkan langganan untuk ${self.mlist.display_name} dari ${self.address.email}"
 
-#: src/mailman/app/subscriptions.py:633
+#: src/mailman/app/subscriptions.py:629
 #, python-brace-format
 msgid "You have been invited to join the ${event.mlist.fqdn_listname} mailing list."
 msgstr "Anda telah diundang untuk bergabung milis ${event.mlist.fqdn_listname}."
 
-#: src/mailman/app/subscriptions.py:636
+#: src/mailman/app/subscriptions.py:632
 #, python-brace-format
 msgid "Your confirmation is needed to leave the ${event.mlist.fqdn_listname} mailing list."
-msgstr ""
-"Konfirmasi Anda dibutuhkan untuk meninggalkan milis ${event.mlist."
-"fqdn_listname}."
+msgstr "Konfirmasi Anda dibutuhkan untuk meninggalkan milis ${event.mlist.fqdn_listname}."
 
-#: src/mailman/app/subscriptions.py:640
+#: src/mailman/app/subscriptions.py:636
 #, python-brace-format
 msgid "Your confirmation is needed to join the ${event.mlist.fqdn_listname} mailing list."
-msgstr ""
-"Konfirmasi Anda dibutuhkan untuk bergabung ke milis ${event.mlist."
-"fqdn_listname}."
+msgstr "Konfirmasi Anda dibutuhkan untuk bergabung ke milis ${event.mlist.fqdn_listname}."
 
-#: src/mailman/bin/mailman.py:102 src/mailman/bin/master.py:518 src/mailman/bin/runner.py:96
+#: src/mailman/bin/mailman.py:102 src/mailman/bin/master.py:565
+#: src/mailman/bin/runner.py:96
 msgid ""
 "    Configuration file to use.  If not given, the environment variable\n"
 "    MAILMAN_CONFIG_FILE is consulted and used if set.  If neither are given, a\n"
 "    default configuration file is loaded."
 msgstr ""
-"    Berkas konfigurasi yang digunakan.  Jika tidak diberikan, variabel "
-"lingkungan\n"
+"    Berkas konfigurasi yang digunakan.  Jika tidak diberikan, variabel lingkungan\n"
 "    MAILMAN_CONFIG_FILE akan digunakan, jika diatur.  Jika dua itu tidak\n"
 "    diberikan, berkas konfigurasi baku akan dimuat."
 
@@ -175,14 +162,11 @@ msgid ""
 "    refuse to run as root unless this option is specified."
 msgstr ""
 "    Menjalankan perintah Mailman sebagai root tidak direkomendasikan dan\n"
-"    Mailman akan menolak untuk berjalan sebagai root kecuali opsi ini "
-"dirincikan."
+"    Mailman akan menolak untuk berjalan sebagai root kecuali opsi ini dirincikan."
 
 #: src/mailman/bin/mailman.py:129
 msgid "    If you are sure you want to run as root, specify --run-as-root."
-msgstr ""
-"    Jika Anda yakin ingin menjalankannya sebagai root, rincikan --run-as-"
-"root."
+msgstr "    Jika Anda yakin ingin menjalankannya sebagai root, rincikan --run-as-root."
 
 #: src/mailman/bin/master.py:157
 msgid ""
@@ -221,7 +205,7 @@ msgid ""
 "Exiting."
 msgstr ""
 
-#: src/mailman/bin/master.py:494
+#: src/mailman/bin/master.py:541
 msgid ""
 "    Master subprocess watcher.\n"
 "\n"
@@ -244,13 +228,13 @@ msgid ""
 "    normally don't need to use this PID directly."
 msgstr ""
 
-#: src/mailman/bin/master.py:525
+#: src/mailman/bin/master.py:572
 msgid ""
 "    Don't restart the runners when they exit because of an error or a SIGUSR1.\n"
 "    Use this only for debugging."
 msgstr ""
 
-#: src/mailman/bin/master.py:531
+#: src/mailman/bin/master.py:578
 msgid ""
 "    If the master watcher finds an existing master lock, it will normally exit\n"
 "    with an error message.  With this option,the master will perform an extra\n"
@@ -261,14 +245,14 @@ msgid ""
 "    master lock."
 msgstr ""
 
-#: src/mailman/bin/master.py:544
+#: src/mailman/bin/master.py:591
 msgid ""
 "    Override the default set of runners that the master will invoke, which is\n"
 "    typically defined in the configuration file.  Multiple -r options may be\n"
 "    given.  The values for -r are passed straight through to bin/runner."
 msgstr ""
 
-#: src/mailman/bin/master.py:551 src/mailman/bin/runner.py:133
+#: src/mailman/bin/master.py:598 src/mailman/bin/runner.py:133
 msgid "Display more debugging information to the log file."
 msgstr "Tampilkan lebih banyak informasi pengawakutuan ke berkas log."
 
@@ -375,29 +359,24 @@ msgstr "Pemberitahuan respons otomatis terakhir untuk hari ini"
 msgid "Hold a message and stop processing."
 msgstr "Tahan pesan dan berhenti pemrosesan."
 
-#: src/mailman/chains/hold.py:199
+#: src/mailman/chains/hold.py:202
 #, python-brace-format
 msgid "Your message to ${mlist.fqdn_listname} awaits moderator approval"
 msgstr "Pesan Anda untuk ${mlist.fqdn_listname} menunggu persetujuan moderator"
 
-#: src/mailman/chains/hold.py:228
+#: src/mailman/chains/hold.py:231
 #, fuzzy, python-brace-format
 msgid "${mlist.fqdn_listname} post from ${msg.sender} requires approval"
 msgstr "${mlist.fqdn_listname} pos dari ${msg.sender} memerlukan persetujuan"
 
-#: src/mailman/chains/hold.py:238
+#: src/mailman/chains/hold.py:246
 msgid ""
 "If you reply to this message, keeping the Subject: header intact, Mailman will\n"
 "discard the held message.  Do this if the message is spam.  If you reply to\n"
 "this message and include an Approved: header with the list password in it, the\n"
 "message will be approved for posting to the list.  The Approved: header can\n"
 "also appear in the first line of the body of the reply."
-msgstr ""
-"Jika Anda membalas pesan ini, dengan menjaga tajuk Subject: secara utuh, "
-"Mailman akan menghapus pesan yang ditahan.  Lakukan ini jika pesan adalah "
-"spam.  Jika Anda membalas ke pesan ini dan mencantumkan tajuk Approved: "
-"dengan kata sandi milis di sana, pesan akan disetujui untuk dipos ke milis.  "
-"Tajuk Approved: bisa juga muncul di baris pertama dari badan balasan."
+msgstr "Jika Anda membalas pesan ini, dengan menjaga tajuk Subject: secara utuh, Mailman akan menghapus pesan yang ditahan.  Lakukan ini jika pesan adalah spam.  Jika Anda membalas ke pesan ini dan mencantumkan tajuk Approved: dengan kata sandi milis di sana, pesan akan disetujui untuk dipos ke milis.  Tajuk Approved: bisa juga muncul di baris pertama dari badan balasan."
 
 #: src/mailman/chains/moderation.py:51
 msgid "Moderation chain"
@@ -412,7 +391,8 @@ msgstr "Rantai pos -owner bawaan."
 msgid "Reject/bounce a message and stop processing."
 msgstr ""
 
-#: src/mailman/commands/cli_addmembers.py:73 src/mailman/commands/cli_syncmembers.py:121
+#: src/mailman/commands/cli_addmembers.py:73
+#: src/mailman/commands/cli_syncmembers.py:121
 #, python-brace-format
 msgid "Cannot parse as valid email address (skipping): ${line}"
 msgstr "Tidak bisa mengurai sebagai surel yang valid (dilewati): ${line}"
@@ -422,12 +402,14 @@ msgstr "Tidak bisa mengurai sebagai surel yang valid (dilewati): ${line}"
 msgid "Already subscribed (skipping): ${email}"
 msgstr "Telah berlangganan (dilewati): ${email}"
 
-#: src/mailman/commands/cli_addmembers.py:107 src/mailman/commands/cli_syncmembers.py:87
+#: src/mailman/commands/cli_addmembers.py:107
+#: src/mailman/commands/cli_syncmembers.py:87
 #, python-brace-format
 msgid "Membership is banned (skipping): ${email}"
 msgstr "Keanggotaan terlarang (dilewati): ${email}"
 
-#: src/mailman/commands/cli_addmembers.py:110 src/mailman/commands/cli_syncmembers.py:90
+#: src/mailman/commands/cli_addmembers.py:110
+#: src/mailman/commands/cli_syncmembers.py:90
 #, python-brace-format
 msgid "Subscription already pending (skipping): ${email}"
 msgstr "Langganan sudah tertahan (dilewati): ${email}"
@@ -439,8 +421,7 @@ msgid ""
 "    Blank lines and lines that start with a '#' are ignored.\n"
 "    "
 msgstr ""
-"    Tambahkan semua surel anggota di FILENAME dengan mode pengiriman seperti "
-"yang dirincikan pada -d/--delivery.\n"
+"    Tambahkan semua surel anggota di FILENAME dengan mode pengiriman seperti yang dirincikan pada -d/--delivery.\n"
 "    FILENAME bisa '-' untuk mengindikasikan masukan standar.\n"
 "    Baris kosong dan baris yang dimulai dengan '#' diabaikan.\n"
 "    "
@@ -458,8 +439,7 @@ msgid ""
 "    Send the added members an invitation rather than immediately adding them.\n"
 "    "
 msgstr ""
-"    Kirim anggota yang ditambahkan undangan alih-alih langsung menambahkan "
-"mereka.\n"
+"    Kirim anggota yang ditambahkan undangan alih-alih langsung menambahkan mereka.\n"
 "    "
 
 #: src/mailman/commands/cli_addmembers.py:137
@@ -467,9 +447,9 @@ msgid "    Override the list's setting for send_welcome_message."
 msgstr "    Timpa pengaturan milis untuk send_welcome_message."
 
 #: src/mailman/commands/cli_addmembers.py:146 src/mailman/commands/cli_import.py:68
-#: src/mailman/commands/cli_inject.py:75 src/mailman/commands/cli_members.py:195
-#: src/mailman/commands/cli_syncmembers.py:204 src/mailman/commands/cli_withlist.py:293
-#: src/mailman/commands/cli_withlist.py:300
+#: src/mailman/commands/cli_inject.py:75 src/mailman/commands/cli_members.py:206
+#: src/mailman/commands/cli_syncmembers.py:204
+#: src/mailman/commands/cli_withlist.py:291 src/mailman/commands/cli_withlist.py:298
 #, fuzzy, python-brace-format
 msgid "No such list: ${listspec}"
 msgstr "Tidak ada milis: ${listspec}"
@@ -577,9 +557,7 @@ msgstr ""
 msgid ""
 "    Don't print status messages.  Error messages are still printed to standard\n"
 "    error."
-msgstr ""
-"    Jangan cetak pesan status.  Pesan galat tetap akan dicetak ke galat "
-"standar."
+msgstr "    Jangan cetak pesan status.  Pesan galat tetap akan dicetak ke galat standar."
 
 #: src/mailman/commands/cli_control.py:93
 msgid "GNU Mailman is already running"
@@ -663,8 +641,7 @@ msgid ""
 "    standard input.  Blank lines and lines that start with a '#' are ignored.\n"
 "    "
 msgstr ""
-"    Hapus anggota milis yang surelnya ada di FILENAME ditambah dengan yang "
-"dirincikan dengan -m/--member, kalau ada.\n"
+"    Hapus anggota milis yang surelnya ada di FILENAME ditambah dengan yang dirincikan dengan -m/--member, kalau ada.\n"
 "    FILENAME bisa '-' untuk mengindikasikan masukan standar.\n"
 "    Baris kosong atau baris yang dimulai dengan '#' diabaikan.\n"
 "    "
@@ -691,20 +668,18 @@ msgid ""
 "    -a/--all or -l/--list.\n"
 "    "
 msgstr ""
-"    Hapus anggota yang dirinci dengan -m/--member dan/atau -f/--file dari "
-"semua milis di pemasangan.  Ini mungkin tidak dirinci bersama -a/--all atau "
-"-l/-list.\n"
+"    Hapus anggota yang dirinci dengan -m/--member dan/atau -f/--file dari semua milis di pemasangan.  Ini mungkin tidak dirinci bersama -a/--all atau -l/-list.\n"
 "    "
 
-#: src/mailman/commands/cli_delmembers.py:93 src/mailman/commands/cli_syncmembers.py:182
+#: src/mailman/commands/cli_delmembers.py:93
+#: src/mailman/commands/cli_syncmembers.py:182
 msgid ""
 "    Override the list's setting for send_goodbye_message to\n"
 "    deleted members."
-msgstr ""
-"    Timpa pengaturan milis untuk send_goodbye_message untuk anggota yang "
-"dihapus."
+msgstr "    Timpa pengaturan milis untuk send_goodbye_message untuk anggota yang dihapus."
 
-#: src/mailman/commands/cli_delmembers.py:98 src/mailman/commands/cli_syncmembers.py:187
+#: src/mailman/commands/cli_delmembers.py:98
+#: src/mailman/commands/cli_syncmembers.py:187
 msgid "    Override the list's setting for admin_notify_mchanges."
 msgstr "    Timpa pengaturan milis untuk admin_notify_mchanges."
 
@@ -728,9 +703,7 @@ msgstr ""
 msgid ""
 "    Send any collected digests right now, even if the size threshold has not\n"
 "    yet been met."
-msgstr ""
-"    Kirim ringkasan yang dikumpulkan sekarang juga, meski batas ukuran belum "
-"tercapai."
+msgstr "    Kirim ringkasan yang dikumpulkan sekarang juga, meski batas ukuran belum tercapai."
 
 #: src/mailman/commands/cli_digests.py:54
 msgid ""
@@ -767,9 +740,7 @@ msgstr "Milis tersebut tidak ditemukan: ${spec}"
 #: src/mailman/commands/cli_digests.py:100
 #, fuzzy, python-brace-format
 msgid "${mlist.list_id} is at volume ${mlist.volume}, number ${mlist.next_digest_number}"
-msgstr ""
-"${mlist.list_id} berada di volume ${mlist.volume}, nomor ${mlist."
-"next_digest_number}"
+msgstr "${mlist.list_id} berada di volume ${mlist.volume}, nomor ${mlist.next_digest_number}"
 
 #: src/mailman/commands/cli_digests.py:106
 #, python-brace-format
@@ -937,9 +908,7 @@ msgid ""
 msgstr ""
 "    Buat milis.\n"
 "\n"
-"    'Nama Milis Absolut', contoh alamat pos dari milis diperlukan.  Harus "
-"merupakan surel yang valid dan domain harus didaftarkan ke Mailman.  Nama "
-"milis akan dipaksakan ke huruf kecil."
+"    'Nama Milis Absolut', contoh alamat pos dari milis diperlukan.  Harus merupakan surel yang valid dan domain harus didaftarkan ke Mailman.  Nama milis akan dipaksakan ke huruf kecil."
 
 #: src/mailman/commands/cli_lists.py:134
 msgid ""
@@ -1026,12 +995,12 @@ msgstr ""
 msgid "Removed list: ${listspec}"
 msgstr "Milis yang dihapus: ${listspec}"
 
-#: src/mailman/commands/cli_members.py:90
+#: src/mailman/commands/cli_members.py:89
 #, python-brace-format
 msgid "${mlist.list_id} has no members"
 msgstr "${mlist.list_id} tidak memiliki anggota"
 
-#: src/mailman/commands/cli_members.py:112
+#: src/mailman/commands/cli_members.py:116
 msgid ""
 "    Display a mailing list's members.\n"
 "    Filtering along various criteria can be done when displaying.\n"
@@ -1040,32 +1009,32 @@ msgid ""
 "    "
 msgstr ""
 
-#: src/mailman/commands/cli_members.py:121
+#: src/mailman/commands/cli_members.py:125
 msgid ""
 "    [MODE] Add all member addresses in FILENAME.  This option is removed.\n"
 "    Use 'mailman addmembers' instead."
 msgstr ""
 
-#: src/mailman/commands/cli_members.py:127
+#: src/mailman/commands/cli_members.py:131
 msgid ""
 "    [MODE] Delete all member addresses found in FILENAME.\n"
 "    This option is removed. Use 'mailman delmembers' instead."
 msgstr ""
 
-#: src/mailman/commands/cli_members.py:133
+#: src/mailman/commands/cli_members.py:137
 msgid ""
 "    [MODE] Synchronize all member addresses of the specified mailing list\n"
 "    with the member addresses found in FILENAME.\n"
 "    This option is removed. Use 'mailman syncmembers' instead."
 msgstr ""
 
-#: src/mailman/commands/cli_members.py:140
+#: src/mailman/commands/cli_members.py:144
 msgid ""
 "    Display output to FILENAME instead of stdout.  FILENAME\n"
 "    can be '-' to indicate standard output."
 msgstr ""
 
-#: src/mailman/commands/cli_members.py:147
+#: src/mailman/commands/cli_members.py:151
 msgid ""
 "    Display only members with a given ROLE.\n"
 "    The role may be 'any', 'member', 'nonmember', 'owner', 'moderator',\n"
@@ -1073,22 +1042,22 @@ msgid ""
 "    If not given, then 'member' role is assumed."
 msgstr ""
 
-#: src/mailman/commands/cli_members.py:155
+#: src/mailman/commands/cli_members.py:159
 msgid "    Display only regular delivery members."
 msgstr ""
 
-#: src/mailman/commands/cli_members.py:166
+#: src/mailman/commands/cli_members.py:176
 msgid "    This option has no effect. It exists for backwards compatibility only."
 msgstr ""
 
-#: src/mailman/commands/cli_members.py:172
+#: src/mailman/commands/cli_members.py:182
 msgid ""
 "    Display only digest members of kind.\n"
 "    'any' means any digest type, 'plaintext' means only plain text (rfc 1153)\n"
 "    type digests, 'mime' means MIME type digests."
 msgstr ""
 
-#: src/mailman/commands/cli_members.py:180
+#: src/mailman/commands/cli_members.py:190
 msgid ""
 "    Display only members with a given delivery status.\n"
 "    'enabled' means all members whose delivery is enabled, 'any' means\n"
@@ -1259,9 +1228,7 @@ msgstr ""
 
 #: src/mailman/commands/cli_syncmembers.py:178
 msgid "    Override the list's setting for send_welcome_message to added members."
-msgstr ""
-"    Timpa pengaturan milis untuk send_welcome_message untuk anggota yang "
-"ditambahkan."
+msgstr "    Timpa pengaturan milis untuk send_welcome_message untuk anggota yang ditambahkan."
 
 #: src/mailman/commands/cli_syncmembers.py:192
 msgid ""
@@ -1290,25 +1257,25 @@ msgstr ""
 msgid "Display Mailman's version."
 msgstr "Tampilkan versi Mailman."
 
-#: src/mailman/commands/cli_withlist.py:76
+#: src/mailman/commands/cli_withlist.py:74
 msgid "ipython is not available, set use_ipython to no"
 msgstr "ipython tidak tersedia, atur use_ipython ke no"
 
-#: src/mailman/commands/cli_withlist.py:86
+#: src/mailman/commands/cli_withlist.py:84
 msgid "readline not available"
 msgstr "readline tidak tersedia"
 
-#: src/mailman/commands/cli_withlist.py:134
+#: src/mailman/commands/cli_withlist.py:132
 msgid "Invalid value for [shell]use_python: {}"
 msgstr ""
 
-#: src/mailman/commands/cli_withlist.py:150
+#: src/mailman/commands/cli_withlist.py:148
 msgid ""
 "This script provides you with a general framework for interacting with a\n"
 "mailing list."
 msgstr ""
 
-#: src/mailman/commands/cli_withlist.py:154
+#: src/mailman/commands/cli_withlist.py:152
 msgid ""
 "There are two ways to use this script: interactively or programmatically.\n"
 "Using it interactively allows you to play with, examine and modify a mailing\n"
@@ -1317,7 +1284,7 @@ msgid ""
 "mailing list object."
 msgstr ""
 
-#: src/mailman/commands/cli_withlist.py:161
+#: src/mailman/commands/cli_withlist.py:159
 msgid ""
 "Programmatically, you can write a function to operate on a mailing list, and\n"
 "this script will take care of the housekeeping (see below for examples).  In\n"
@@ -1329,7 +1296,7 @@ msgid ""
 "(e.g. ant@example.com), or the List-ID (e.g. ant.example.com)."
 msgstr ""
 
-#: src/mailman/commands/cli_withlist.py:171
+#: src/mailman/commands/cli_withlist.py:169
 msgid ""
 "Here's an example of how to use the --run option.  Say you have a file in the\n"
 "Mailman installation directory called 'listaddr.py', with the following two\n"
@@ -1348,7 +1315,7 @@ msgid ""
 "If -l is not given then you can run a function that takes no arguments.\n"
 msgstr ""
 
-#: src/mailman/commands/cli_withlist.py:189
+#: src/mailman/commands/cli_withlist.py:187
 msgid ""
 "You can print the list's posting address by running the following from the\n"
 "command line:\n"
@@ -1359,7 +1326,7 @@ msgid ""
 "ant@example.com"
 msgstr ""
 
-#: src/mailman/commands/cli_withlist.py:198
+#: src/mailman/commands/cli_withlist.py:196
 msgid ""
 "And you can print the list's request address by running:\n"
 "\n"
@@ -1369,7 +1336,7 @@ msgid ""
 "ant-request@example.com"
 msgstr ""
 
-#: src/mailman/commands/cli_withlist.py:206
+#: src/mailman/commands/cli_withlist.py:204
 msgid ""
 "As another example, say you wanted to change the display name for a particular\n"
 "mailing list.  You could put the following function in a file called\n"
@@ -1386,7 +1353,7 @@ msgid ""
 "Mailman will do this for you (assuming no errors occured)."
 msgstr ""
 
-#: src/mailman/commands/cli_withlist.py:225
+#: src/mailman/commands/cli_withlist.py:223
 msgid ""
 "    Operate on a mailing list.\n"
 "\n"
@@ -1398,13 +1365,13 @@ msgstr ""
 "    Untuk bantuan lebih lanjut, lihat --details\n"
 "    "
 
-#: src/mailman/commands/cli_withlist.py:233
+#: src/mailman/commands/cli_withlist.py:231
 msgid ""
 "    Leaves you at an interactive prompt after all other processing is complete.\n"
 "    This is the default unless the --run option is given."
 msgstr ""
 
-#: src/mailman/commands/cli_withlist.py:238
+#: src/mailman/commands/cli_withlist.py:236
 msgid ""
 "\n"
 "    Run a script.  The argument is the module path to a callable.  This\n"
@@ -1419,11 +1386,11 @@ msgid ""
 "    "
 msgstr ""
 
-#: src/mailman/commands/cli_withlist.py:254
+#: src/mailman/commands/cli_withlist.py:252
 msgid "Print detailed instructions and exit."
 msgstr "Cetak informasi terperinci dan keluar."
 
-#: src/mailman/commands/cli_withlist.py:258
+#: src/mailman/commands/cli_withlist.py:256
 msgid ""
 "    A specification of the mailing list to operate on.  This may be the posting\n"
 "    address of the list, or its List-ID.  The argument can also be a Python\n"
@@ -1433,37 +1400,37 @@ msgid ""
 "    LISTSPEC cannot be a regular expression unless --run is given."
 msgstr ""
 
-#: src/mailman/commands/cli_withlist.py:274
+#: src/mailman/commands/cli_withlist.py:272
 msgid "Regular expression requires --run"
 msgstr "Ekspresi reguler (regex) memerlukan --run"
 
-#: src/mailman/commands/cli_withlist.py:301
+#: src/mailman/commands/cli_withlist.py:299
 #, python-brace-format
 msgid "The variable 'm' is the ${listspec} mailing list"
 msgstr ""
 
-#: src/mailman/commands/eml_confirm.py:40
+#: src/mailman/commands/eml_confirm.py:43
 msgid "Confirm a subscription or held message request."
 msgstr ""
 
-#: src/mailman/commands/eml_confirm.py:47
+#: src/mailman/commands/eml_confirm.py:50
 #, fuzzy
 msgid "No confirmation token found"
 msgstr "Tidak ada token konfirmasi yang ditemukan"
 
-#: src/mailman/commands/eml_confirm.py:60 src/mailman/commands/eml_confirm.py:95
+#: src/mailman/commands/eml_confirm.py:63 src/mailman/commands/eml_confirm.py:99
 msgid "Confirmation token did not match"
 msgstr "Token konfirmasi tidak sesuai"
 
-#: src/mailman/commands/eml_confirm.py:91
+#: src/mailman/commands/eml_confirm.py:95
 msgid "Confirmed"
 msgstr "Terkonfirmasi"
 
-#: src/mailman/commands/eml_confirm.py:108
+#: src/mailman/commands/eml_confirm.py:112
 msgid "Invalid Approved: password"
 msgstr ""
 
-#: src/mailman/commands/eml_confirm.py:111
+#: src/mailman/commands/eml_confirm.py:115
 #, python-brace-format
 msgid "Message ${message}"
 msgstr "Pesan ${message}"
@@ -1518,27 +1485,28 @@ msgstr "Gabung ke milis ini."
 msgid "${self.name}: No valid address found to subscribe"
 msgstr "${self.name}: Tidak ada surel valid yang ditemukan untuk dilanggan"
 
-#: src/mailman/commands/eml_membership.py:130
+#: src/mailman/commands/eml_membership.py:131
 #, python-brace-format
 msgid "${person} has a pending subscription for ${listname}"
 msgstr "${person} memiliki langganan tertunda untuk ${listname}"
 
-#: src/mailman/commands/eml_membership.py:133
+#: src/mailman/commands/eml_membership.py:135
 #, python-brace-format
 msgid "Confirmation email sent to ${person}"
 msgstr "Surel konfirmasi dikirim ke ${person}"
 
-#: src/mailman/commands/eml_membership.py:150 src/mailman/commands/eml_membership.py:160
+#: src/mailman/commands/eml_membership.py:152
+#: src/mailman/commands/eml_membership.py:162
 #, python-brace-format
 msgid "bad argument: ${argument}"
 msgstr ""
 
-#: src/mailman/commands/eml_membership.py:173
+#: src/mailman/commands/eml_membership.py:175
 #, fuzzy
 msgid "An alias for 'join'."
 msgstr "Alias untuk 'gabung'."
 
-#: src/mailman/commands/eml_membership.py:184
+#: src/mailman/commands/eml_membership.py:186
 msgid ""
 "Leave this mailing list.\n"
 "\n"
@@ -1548,45 +1516,41 @@ msgstr ""
 "\n"
 "Anda mungkin akan diminta untuk mengonfirmasi permintaan Anda."
 
-#: src/mailman/commands/eml_membership.py:187
+#: src/mailman/commands/eml_membership.py:189
 msgid "Leave this mailing list."
 msgstr "Keluar dari milis ini."
 
-#: src/mailman/commands/eml_membership.py:194
+#: src/mailman/commands/eml_membership.py:196
 #, python-brace-format
 msgid "${self.name}: No valid email address found to unsubscribe"
-msgstr ""
-"${self.name}: Tidak ada surel valid yang ditemukan untuk membatalkan "
-"langganan"
+msgstr "${self.name}: Tidak ada surel valid yang ditemukan untuk membatalkan langganan"
 
-#: src/mailman/commands/eml_membership.py:200
+#: src/mailman/commands/eml_membership.py:202
 #, python-brace-format
 msgid "No registered user for email address: ${email}"
 msgstr "Tidak ada pengguna terdaftar untuk surel: ${email}"
 
-#: src/mailman/commands/eml_membership.py:207
+#: src/mailman/commands/eml_membership.py:210
 #, python-brace-format
 msgid "Invalid or unverified email address: ${email}"
 msgstr "Surel tidak valid atau tidak terverifikasi: ${email}"
 
-#: src/mailman/commands/eml_membership.py:226
+#: src/mailman/commands/eml_membership.py:230
 #, python-brace-format
 msgid "${self.name}: ${email} is not a member of ${mlist.fqdn_listname}"
 msgstr "${self.name}: ${email} bukan anggota dari ${mlist.fqdn_listname}"
 
-#: src/mailman/commands/eml_membership.py:237
+#: src/mailman/commands/eml_membership.py:241
 #, python-brace-format
 msgid "${person} left ${mlist.fqdn_listname}"
 msgstr "${person} meninggalkan ${mlist.fqdn_listname}"
 
-#: src/mailman/commands/eml_membership.py:239
+#: src/mailman/commands/eml_membership.py:243
 #, python-brace-format
 msgid "Confirmation email sent to ${person} to leave ${mlist.fqdn_listname}"
-msgstr ""
-"Surel konfirmasi dikirim untuk ${person} untuk meninggalkan ${mlist."
-"fqdn_listname}"
+msgstr "Surel konfirmasi dikirim untuk ${person} untuk meninggalkan ${mlist.fqdn_listname}"
 
-#: src/mailman/commands/eml_membership.py:249
+#: src/mailman/commands/eml_membership.py:253
 #, fuzzy
 msgid "An alias for 'leave'."
 msgstr "Alias untuk 'keluar'."
@@ -1656,16 +1620,16 @@ msgstr "Hapus beberapa tajuk dari semua pesan."
 msgid "Modify message headers."
 msgstr "Ubah tajuk pesan."
 
-#: src/mailman/handlers/decorate.py:246
+#: src/mailman/handlers/decorate.py:247
 msgid "Decorate a message with headers and footers."
 msgstr "Hias pesan dengan tajuk dan catatan kaki."
 
-#: src/mailman/handlers/dmarc.py:127
+#: src/mailman/handlers/dmarc.py:128
 #, python-brace-format
 msgid "${realname} via ${mlist.display_name}"
 msgstr "${realname} via ${mlist.display_name}"
 
-#: src/mailman/handlers/dmarc.py:228
+#: src/mailman/handlers/dmarc.py:229
 msgid "Apply DMARC mitigations."
 msgstr ""
 
@@ -1683,11 +1647,9 @@ msgid ""
 "Your urgent message to the ${mlist.display_name} mailing list was not\n"
 "authorized for delivery.  The original message as received by Mailman is\n"
 "attached.\n"
-msgstr ""
-"Pesan mendesak Anda ke ${mlist.display_name} tidak diotorisasi untuk "
-"pengiriman.  Pesan asli yang diterima oleh Mailman dilampirkan.\n"
+msgstr "Pesan mendesak Anda ke ${mlist.display_name} tidak diotorisasi untuk pengiriman.  Pesan asli yang diterima oleh Mailman dilampirkan.\n"
 
-#: src/mailman/handlers/mime_delete.py:62
+#: src/mailman/handlers/mime_delete.py:63
 #, python-brace-format
 msgid ""
 "The attached message matched the ${mlist.display_name} mailing list's content\n"
@@ -1697,12 +1659,12 @@ msgid ""
 "\n"
 msgstr ""
 
-#: src/mailman/handlers/mime_delete.py:69
+#: src/mailman/handlers/mime_delete.py:70
 #, fuzzy
 msgid "Content filter message notification"
 msgstr "Pemberitahuan filter konten pesan"
 
-#: src/mailman/handlers/mime_delete.py:97
+#: src/mailman/handlers/mime_delete.py:98
 msgid ""
 "\n"
 "___________________________________________\n"
@@ -1711,42 +1673,41 @@ msgid ""
 msgstr ""
 "\n"
 "___________________________________________\n"
-"Penyaring konten Mailman telah menghapus bagian MIME berikut dari pesan ini."
-"\n"
+"Penyaring konten Mailman telah menghapus bagian MIME berikut dari pesan ini.\n"
 
-#: src/mailman/handlers/mime_delete.py:110
+#: src/mailman/handlers/mime_delete.py:111
 msgid "The message's content type was explicitly disallowed"
 msgstr "Jenis konten pesan secara tertulis tidak diperbolehkan"
 
-#: src/mailman/handlers/mime_delete.py:115
+#: src/mailman/handlers/mime_delete.py:116
 msgid "The message's content type was not explicitly allowed"
 msgstr ""
 
-#: src/mailman/handlers/mime_delete.py:124
+#: src/mailman/handlers/mime_delete.py:125
 msgid "The message's file extension was explicitly disallowed"
 msgstr "Ekstensi berkas pesan secara tertulis tidak diperbolehkan"
 
-#: src/mailman/handlers/mime_delete.py:128
+#: src/mailman/handlers/mime_delete.py:129
 msgid "The message's file extension was not explicitly allowed"
 msgstr ""
 
-#: src/mailman/handlers/mime_delete.py:140
+#: src/mailman/handlers/mime_delete.py:142
 msgid "After content filtering, the message was empty"
 msgstr "Setelah filter konten, pesan kosong"
 
-#: src/mailman/handlers/mime_delete.py:152 src/mailman/handlers/mime_delete.py:291
+#: src/mailman/handlers/mime_delete.py:154 src/mailman/handlers/mime_delete.py:317
 msgid ""
 "\n"
 "Replaced multipart/alternative part with first alternative.\n"
 msgstr ""
 
-#: src/mailman/handlers/mime_delete.py:239 src/mailman/handlers/mime_delete.py:246
-#: src/mailman/handlers/mime_delete.py:255 src/mailman/handlers/mime_delete.py:261
+#: src/mailman/handlers/mime_delete.py:265 src/mailman/handlers/mime_delete.py:272
+#: src/mailman/handlers/mime_delete.py:281 src/mailman/handlers/mime_delete.py:287
 #, python-brace-format
 msgid "Name: ${fname}\n"
 msgstr "Nama: ${fname}\n"
 
-#: src/mailman/handlers/mime_delete.py:374
+#: src/mailman/handlers/mime_delete.py:400
 msgid "Filter the MIME content of messages."
 msgstr "Filter konten MIME dari pesan."
 
@@ -1767,7 +1728,7 @@ msgstr "Respons otomatis terhadap pesan Anda untuk milis \"${display_name}\""
 msgid "The Mailman Replybot"
 msgstr "Bot Pembalas dari Mailman"
 
-#: src/mailman/handlers/rfc_2369.py:128
+#: src/mailman/handlers/rfc_2369.py:131
 msgid "Add the RFC 2369 List-* headers."
 msgstr "Muat tajuk RFC 2369 List-*."
 
@@ -1811,7 +1772,7 @@ msgstr "[Tidak ada alasan yang diberikan]"
 msgid "The built-in owner pipeline."
 msgstr ""
 
-#: src/mailman/pipelines/builtin.py:43
+#: src/mailman/pipelines/builtin.py:44
 msgid "The built-in posting pipeline."
 msgstr ""
 
@@ -1827,7 +1788,7 @@ msgstr "Permintaan berlangganan"
 msgid "Catch mis-addressed email commands."
 msgstr ""
 
-#: src/mailman/rules/administrivia.py:97
+#: src/mailman/rules/administrivia.py:99
 msgid "Message contains administrivia"
 msgstr ""
 
@@ -1859,20 +1820,17 @@ msgstr "Pesan memiliki sebuah subjek ringkasan"
 msgid "Message quotes digest boilerplate"
 msgstr ""
 
-#: src/mailman/rules/dmarc.py:307
+#: src/mailman/rules/dmarc.py:315
 msgid "Find DMARC policy of From: domain."
 msgstr "Cari kebijakan DMARC untuk domain From:"
 
-#: src/mailman/rules/dmarc.py:327
+#: src/mailman/rules/dmarc.py:335
 msgid "DMARC moderation"
 msgstr "Moderasi DMARC"
 
-#: src/mailman/rules/dmarc.py:333
+#: src/mailman/rules/dmarc.py:341
 #, python-brace-format
-msgid ""
-"You are not allowed to post to this mailing list From: a domain which publishes a DMARC policy of reject or "
-"quarantine, and your message has been automatically rejected.  If you think that your messages are being "
-"rejected in error, contact the mailing list owner at ${listowner}."
+msgid "You are not allowed to post to this mailing list From: a domain which publishes a DMARC policy of reject or quarantine, and your message has been automatically rejected.  If you think that your messages are being rejected in error, contact the mailing list owner at ${listowner}."
 msgstr ""
 
 #: src/mailman/rules/emergency.py:34
@@ -1881,8 +1839,7 @@ msgid ""
 "        pre-approved by the list administrator.\n"
 "        "
 msgstr ""
-"Milis ini sedang dinyatakan darurat dan pesan ini tidak disetujui sebelumnya "
-"oleh administrator.\n"
+"Milis ini sedang dinyatakan darurat dan pesan ini tidak disetujui sebelumnya oleh administrator.\n"
 "        "
 
 #: src/mailman/rules/emergency.py:47
@@ -1922,27 +1879,27 @@ msgstr "Tangkap pesan yang lebih besar dari maksimum yang dirinci."
 msgid "The message is larger than the {} KB maximum size"
 msgstr "Pesan lebih besar dari ukuran maksimum {} KB"
 
-#: src/mailman/rules/moderation.py:65
+#: src/mailman/rules/moderation.py:69
 msgid "Match messages sent by moderated members."
 msgstr "Cocokkan pesan yang dikirim oleh anggota termoderasi."
 
-#: src/mailman/rules/moderation.py:93
+#: src/mailman/rules/moderation.py:97
 msgid "The message comes from a moderated member"
 msgstr "Pesan ini dari anggota termoderasi"
 
-#: src/mailman/rules/moderation.py:108
+#: src/mailman/rules/moderation.py:112
 msgid "The message is not from a list member"
 msgstr "Pesan bukan dari anggota milis"
 
-#: src/mailman/rules/moderation.py:125
+#: src/mailman/rules/moderation.py:129
 msgid "Match messages sent by nonmembers."
 msgstr "Cocokkan pesan yang dikirim oleh non-anggota."
 
-#: src/mailman/rules/moderation.py:140
+#: src/mailman/rules/moderation.py:144
 msgid "No sender was found in the message."
 msgstr "Tidak ada pengirim yang ditemukan dalam pesan."
 
-#: src/mailman/rules/moderation.py:195
+#: src/mailman/rules/moderation.py:200
 msgid "The sender is in the nonmember {} list"
 msgstr "Pengiriman ada di daftar non-anggota {}"
 
@@ -1990,35 +1947,35 @@ msgstr "Aturan yang selalu cocok."
 msgid "Ignoring non-text/plain MIME parts"
 msgstr "Abaikan bagian MIME non-teks/polos"
 
-#: src/mailman/runners/command.py:143
+#: src/mailman/runners/command.py:144
 msgid "The results of your email command are provided below.\n"
 msgstr "Hasil dari perintah surel Anda terlampir di bawah ini.\n"
 
-#: src/mailman/runners/command.py:187
+#: src/mailman/runners/command.py:188
 msgid "- Original message details:"
 msgstr "- Detail pesan asli:"
 
-#: src/mailman/runners/command.py:191
+#: src/mailman/runners/command.py:194
 #, python-brace-format
 msgid "    From: ${from_}"
 msgstr "    Dari: ${from_}"
 
-#: src/mailman/runners/command.py:192
+#: src/mailman/runners/command.py:195
 #, python-brace-format
 msgid "    Subject: ${subject}"
 msgstr "    Subjek: ${subject}"
 
-#: src/mailman/runners/command.py:193
+#: src/mailman/runners/command.py:196
 #, python-brace-format
 msgid "    Date: ${date}"
 msgstr "    Tanggal: ${date}"
 
-#: src/mailman/runners/command.py:194
+#: src/mailman/runners/command.py:197
 #, python-brace-format
 msgid "    Message-ID: ${message_id}"
 msgstr "    ID Pesan: ${message_id}"
 
-#: src/mailman/runners/command.py:195
+#: src/mailman/runners/command.py:198
 msgid ""
 "\n"
 "- Results:"
@@ -2026,12 +1983,12 @@ msgstr ""
 "\n"
 "- Hasil:"
 
-#: src/mailman/runners/command.py:209
+#: src/mailman/runners/command.py:212
 #, python-brace-format
 msgid "No such command: ${command_name}"
 msgstr "Tidak ada perintah seperti itu: ${command_name}"
 
-#: src/mailman/runners/command.py:223
+#: src/mailman/runners/command.py:226
 msgid ""
 "\n"
 "- Unprocessed:"
@@ -2039,7 +1996,7 @@ msgstr ""
 "\n"
 "- Tidak diproses:"
 
-#: src/mailman/runners/command.py:228
+#: src/mailman/runners/command.py:231
 msgid ""
 "\n"
 "- Ignored:"
@@ -2047,7 +2004,7 @@ msgstr ""
 "\n"
 "- Diabaikan:"
 
-#: src/mailman/runners/command.py:231
+#: src/mailman/runners/command.py:234
 msgid ""
 "\n"
 "- Done."
@@ -2055,7 +2012,7 @@ msgstr ""
 "\n"
 "- Selesai."
 
-#: src/mailman/runners/command.py:237
+#: src/mailman/runners/command.py:240
 msgid "The results of your email commands"
 msgstr "Hasil perintah surel Anda"
 
@@ -2125,8 +2082,7 @@ msgid ""
 "Size: ${size} bytes\n"
 "Desc: ${desc}\n"
 msgstr ""
-"Bagian pesan yang tidak kompatibel dengan ringkasan teks polos telah "
-"dihapus...\n"
+"Bagian pesan yang tidak kompatibel dengan ringkasan teks polos telah dihapus...\n"
 "Nama: ${filename}\n"
 "Jenis: ${ctype}\n"
 "Ukuran: ${size} bita\n"
@@ -2141,10 +2097,8 @@ msgstr ""
 "Milis '$listname' telah dibuat untuk Anda.\n"
 "Berikut adalah beberapa informasi dasar tentang milis Anda.\n"
 "\n"
-"Tersedia tampilan berbasis surel untuk pengguna (bukan admin) untuk milis "
-"Anda;\n"
-"Anda bisa mendapatkan informasi tentang penggunaannya dengan mengirim pesan "
-"dengan kata 'help' di subjek atau badan, ke:\n"
+"Tersedia tampilan berbasis surel untuk pengguna (bukan admin) untuk milis Anda;\n"
+"Anda bisa mendapatkan informasi tentang penggunaannya dengan mengirim pesan dengan kata 'help' di subjek atau badan, ke:\n"
 "\n"
 "    $request_email\n"
 "\n"
@@ -2154,16 +2108,11 @@ msgid "help.txt"
 msgstr ""
 "Bantuan untuk milis $listname\n"
 "\n"
-"Ini adalah perintah surel 'help' untuk pengelola milis GNU Mailman versi $"
-"version di $domain.  Berikut akan merinci perintah yang bisa Anda kirim "
-"untuk mendapatkan informasi tentang dan kontrol langganan ke milis Mailman "
-"di situs ini.  Sebuah perintah bisa ada di baris Subjek atau badan pesan.\n"
+"Ini adalah perintah surel 'help' untuk pengelola milis GNU Mailman versi $version di $domain.  Berikut akan merinci perintah yang bisa Anda kirim untuk mendapatkan informasi tentang dan kontrol langganan ke milis Mailman di situs ini.  Sebuah perintah bisa ada di baris Subjek atau badan pesan.\n"
 "\n"
 "Perintah dikirim ke ${listname}-request@${domain} address.\n"
 "\n"
-"Tentang deskripsi - kata di \"<>\" menandakan item WAJIB dan di \"[]\" "
-"menandakan item OPSIONAL.  Jangan memuat tanda \"<>\" atau \"[]\" ketika "
-"Anda menggunakan perintah.\n"
+"Tentang deskripsi - kata di \"<>\" menandakan item WAJIB dan di \"[]\" menandakan item OPSIONAL.  Jangan memuat tanda \"<>\" atau \"[]\" ketika Anda menggunakan perintah.\n"
 "\n"
 "Perintah berikut valid:\n"
 "\n"
@@ -2175,8 +2124,7 @@ msgstr ""
 
 msgid "list:admin:action:post.txt"
 msgstr ""
-"Sebagai administrator milis, persetujuan Anda diperlukan untuk pos milis "
-"berikut:\n"
+"Sebagai administrator milis, persetujuan Anda diperlukan untuk pos milis berikut:\n"
 "\n"
 "    Milis:    $listname\n"
 "    Dari:    $sender_email\n"
@@ -2186,8 +2134,7 @@ msgstr ""
 "\n"
 "$reasons\n"
 "\n"
-"Untuk kemudahan Anda, kunjungi bilah admin untuk menyetujui atau menolak "
-"permintaan."
+"Untuk kemudahan Anda, kunjungi bilah admin untuk menyetujui atau menolak permintaan."
 
 msgid "list:admin:action:subscribe.txt"
 msgstr ""
@@ -2213,19 +2160,13 @@ msgid "list:admin:notice:pending.txt"
 msgstr ""
 
 msgid "list:admin:notice:removal.txt"
-msgstr ""
-"$member telah dibatalkan langganannya dari $listname karena galat pengiriman "
-"yang berlebihan."
+msgstr "$member telah dibatalkan langganannya dari $listname karena galat pengiriman yang berlebihan."
 
 msgid "list:admin:notice:subscribe.txt"
 msgstr "$member telah berhasil berlangganan ke $display_name."
 
 msgid "list:admin:notice:unrecognized.txt"
-msgstr ""
-"Pesan yang dilampirkan diterima sebagai galat pengiriman, tetapi antara "
-"format galat tidak dikenali atau tidak ada surel anggota yang didapatkan "
-"dari itu.  Milis ini telah diatur agar semua pesan galat pengiriman dikirim "
-"ke administrator milis."
+msgstr "Pesan yang dilampirkan diterima sebagai galat pengiriman, tetapi antara format galat tidak dikenali atau tidak ada surel anggota yang didapatkan dari itu.  Milis ini telah diatur agar semua pesan galat pengiriman dikirim ke administrator milis."
 
 msgid "list:admin:notice:unsubscribe.txt"
 msgstr "$member telah berhasil dihapus dari $display_name."
@@ -2238,15 +2179,13 @@ msgstr ""
 "Kirim pos milis $display_name ke\n"
 "\t$listname\n"
 "\n"
-"Untuk berlangganan atau membatalkan langganan lewat surel, kirim pesan "
-"dengan di subjek atau badan bertulis 'help' ke\n"
+"Untuk berlangganan atau membatalkan langganan lewat surel, kirim pesan dengan di subjek atau badan bertulis 'help' ke\n"
 "\t$request_email\n"
 "\n"
 "Anda bisa menghubungi yang mengelola milis di\n"
 "\t$owner_email\n"
 "\n"
-"Ketika membalas, sunting baris subjek Anda sehingga bisa lebih rinci dari "
-"\"Re: Konten dari ringkasan $display_name...\""
+"Ketika membalas, sunting baris subjek Anda sehingga bisa lebih rinci dari \"Re: Konten dari ringkasan $display_name...\""
 
 msgid "list:member:generic:footer.txt"
 msgstr ""
@@ -2259,20 +2198,15 @@ msgstr ""
 
 msgid "list:user:action:invite.txt"
 msgstr ""
-"Surel Anda \"$user_email\" telah diundang untuk bergabung ke $short_listname "
-"di $domain oleh pemilik $short_listname. Anda bisa menerima undangan hanya "
-"dengan membalas pesan ini.\n"
+"Surel Anda \"$user_email\" telah diundang untuk bergabung ke $short_listname di $domain oleh pemilik $short_listname. Anda bisa menerima undangan hanya dengan membalas pesan ini.\n"
 "\n"
-"Atau Anda bisa, dalam pesan ke $request_email, berisi baris berikut, dan "
-"hanya baris berikut:\n"
+"Atau Anda bisa, dalam pesan ke $request_email, berisi baris berikut, dan hanya baris berikut:\n"
 "\n"
 "    confirm $token\n"
 "\n"
-"Perlu diketahui bahwa dengan hanya mengirim 'balasan' ke pesan ini "
-"seharusnya bisa bekerja di hampir semua pembaca surel.\n"
+"Perlu diketahui bahwa dengan hanya mengirim 'balasan' ke pesan ini seharusnya bisa bekerja di hampir semua pembaca surel.\n"
 "\n"
-"Jika Anda ingin menolak undangan ini, tinggal abaikan pesan ini saja.  Jika "
-"Anda memiliki pertanyaan, silakan kirim ke $owner_email."
+"Jika Anda ingin menolak undangan ini, tinggal abaikan pesan ini saja.  Jika Anda memiliki pertanyaan, silakan kirim ke $owner_email."
 
 msgid "list:user:action:subscribe.txt"
 msgstr ""
@@ -2284,21 +2218,15 @@ msgstr ""
 "\n"
 "    $user_email\n"
 "\n"
-"Sebelum Anda bisa menggunakan GNU Mailman di situs ini, pertama-tama Anda "
-"harus mengonfirmasi bahwa ini adalah alamat surel Anda.  Anda bisa "
-"melakukannya dengan membalas surel ini.\n"
+"Sebelum Anda bisa menggunakan GNU Mailman di situs ini, pertama-tama Anda harus mengonfirmasi bahwa ini adalah alamat surel Anda.  Anda bisa melakukannya dengan membalas surel ini.\n"
 "\n"
-"Atau Anda bisa, dalam pesan ke $request_email, berisi baris berikut, dan "
-"hanya baris berikut:\n"
+"Atau Anda bisa, dalam pesan ke $request_email, berisi baris berikut, dan hanya baris berikut:\n"
 "\n"
 "    confirm $token\n"
 "\n"
-"Perlu diketahui bahwa dengan hanya mengirim 'balasan' ke pesan ini "
-"seharusnya bisa bekerja di hampir semua pembaca surel.\n"
+"Perlu diketahui bahwa dengan hanya mengirim 'balasan' ke pesan ini seharusnya bisa bekerja di hampir semua pembaca surel.\n"
 "\n"
-"Jika Anda tidak menginginkan untuk mendaftarkan alamat surel ini, tinggal "
-"abaikan pesan ini saja.  Jika Anda pikir Anda secara tidak wajar telah "
-"dilanggankan ke milis, atau memiliki pertanyaan lain, Anda bisa menghubungi\n"
+"Jika Anda tidak menginginkan untuk mendaftarkan alamat surel ini, tinggal abaikan pesan ini saja.  Jika Anda pikir Anda secara tidak wajar telah dilanggankan ke milis, atau memiliki pertanyaan lain, Anda bisa menghubungi\n"
 "\n"
 "    $owner_email"
 
@@ -2312,22 +2240,15 @@ msgstr ""
 "\n"
 "    $user_email\n"
 "\n"
-"Sebelum GNU Mailman bisa membatalkan langganan Anda, pertama-tama Anda harus "
-"mengonfirmasi permintaan Anda.  Anda bisa melakukannya dengan membalas surel "
-"ini.\n"
+"Sebelum GNU Mailman bisa membatalkan langganan Anda, pertama-tama Anda harus mengonfirmasi permintaan Anda.  Anda bisa melakukannya dengan membalas surel ini.\n"
 "\n"
-"Atau Anda bisa, dalam pesan ke $request_email, berisi baris berikut, dan "
-"hanya baris berikut:\n"
+"Atau Anda bisa, dalam pesan ke $request_email, berisi baris berikut, dan hanya baris berikut:\n"
 "\n"
 "    confirm $token\n"
 "\n"
-"Perlu diketahui bahwa dengan hanya mengirim 'balasan' ke pesan ini "
-"seharusnya bisa bekerja di hampir semua pembaca surel.\n"
+"Perlu diketahui bahwa dengan hanya mengirim 'balasan' ke pesan ini seharusnya bisa bekerja di hampir semua pembaca surel.\n"
 "\n"
-"Jika Anda tidak menginginkan untuk membatalkan langganan alamat surel ini, "
-"tinggal abaikan pesan ini saja.  Jika Anda pikir Anda secara tidak wajar "
-"telah dibatalkan langganan milis, atau memiliki pertanyaan lain, Anda bisa "
-"menghubungi\n"
+"Jika Anda tidak menginginkan untuk membatalkan langganan alamat surel ini, tinggal abaikan pesan ini saja.  Jika Anda pikir Anda secara tidak wajar telah dibatalkan langganan milis, atau memiliki pertanyaan lain, Anda bisa menghubungi\n"
 "\n"
 "    $owner_email"
 
@@ -2346,8 +2267,7 @@ msgstr ""
 "\n"
 "$reasons\n"
 "\n"
-"Antar pesan akan dipos ke milis, atau Anda akan menerima notifikasi putusan "
-"moderator."
+"Antar pesan akan dipos ke milis, atau Anda akan menerima notifikasi putusan moderator."
 
 msgid "list:user:notice:no-more-today.txt"
 msgstr ""
@@ -2369,8 +2289,7 @@ msgstr ""
 "\n"
 "    $request\n"
 "\n"
-"telah ditolak oleh moderator milis.  Moderator memberikan alasan berikut "
-"untuk menolak permintaan Anda:\n"
+"telah ditolak oleh moderator milis.  Moderator memberikan alasan berikut untuk menolak permintaan Anda:\n"
 "\n"
 "\"$reason\"\n"
 "\n"
@@ -2388,10 +2307,7 @@ msgstr ""
 
 msgid "list:user:notice:warning.txt"
 msgstr ""
-"Langganan Anda untuk milis $listname telah dimatikan karena ada banyaknya "
-"galat pengiriman yang mengindikasikan bahwa ada masalah mengirimkan pesan ke "
-"$sender_email. Anda mungkin ingin memeriksakannya ke administrator surel "
-"Anda untuk bantuan lebih lanjut.\n"
+"Langganan Anda untuk milis $listname telah dimatikan karena ada banyaknya galat pengiriman yang mengindikasikan bahwa ada masalah mengirimkan pesan ke $sender_email. Anda mungkin ingin memeriksakannya ke administrator surel Anda untuk bantuan lebih lanjut.\n"
 "\n"
 "Jika Anda ada pertanyaan atau masalah, silakan hubungi pemilik milis di\n"
 "\n"
@@ -2405,13 +2321,8 @@ msgstr ""
 "\n"
 "  $listname\n"
 "\n"
-"Anda bisa membatalkan langganan atau mengatur pilihan Anda dengan surel "
-"dengan mengirim pesan ke:\n"
+"Anda bisa membatalkan langganan atau mengatur pilihan Anda dengan surel dengan mengirim pesan ke:\n"
 "\n"
 "  $request_email\n"
 "\n"
-"dengan kata 'help' di antara subjek atau badan surel (jangan ketik tanda "
-"petiknya), dan Anda akan mendapatkan pesan dengan petunjuk.  Anda akan "
-"memerlukan kata sandi Anda untuk mengubah pilihan Anda, tetapi untuk alasan "
-"keamanan, kata sandi Anda tidak akan dilampirkan di sini.  Jika Anda lupa "
-"kata sandi Anda, Anda harus mengatur ulangnya dari UI Web."
+"dengan kata 'help' di antara subjek atau badan surel (jangan ketik tanda petiknya), dan Anda akan mendapatkan pesan dengan petunjuk.  Anda akan memerlukan kata sandi Anda untuk mengubah pilihan Anda, tetapi untuk alasan keamanan, kata sandi Anda tidak akan dilampirkan di sini.  Jika Anda lupa kata sandi Anda, Anda harus mengatur ulangnya dari UI Web."

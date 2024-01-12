@@ -1,0 +1,4 @@
+$memberの購読は、
+バウンススコアがメーリングリストのbounce_score_thresholdを超えたため、$listnameで無効にされました。
+
+トリガーとなるDSNが利用可能な場合、添付されています。

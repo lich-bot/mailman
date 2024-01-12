@@ -7,11 +7,10 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-03-14 11:45-0700\n"
+"POT-Creation-Date: 2024-01-12 11:40-0800\n"
 "PO-Revision-Date: 2022-03-23 03:38+0000\n"
 "Last-Translator: Jaume Ortolà i Font <jaumeortola@gmail.com>\n"
-"Language-Team: Catalan <https://hosted.weblate.org/projects/gnu-mailman/"
-"mailman/ca/>\n"
+"Language-Team: Catalan <https://hosted.weblate.org/projects/gnu-mailman/mailman/ca/>\n"
 "Language: ca\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -21,7 +20,7 @@ msgstr ""
 
 #: src/mailman/app/bounces.py:76 src/mailman/app/moderator.py:85
 #: src/mailman/chains/hold.py:163 src/mailman/handlers/acknowledge.py:56
-#: src/mailman/handlers/subject_prefix.py:45
+#: src/mailman/handlers/subject_prefix.py:46
 #: src/mailman/handlers/subject_prefix.py:91 src/mailman/runners/digest.py:88
 msgid "(no subject)"
 msgstr "(sense assumpte)"
@@ -52,43 +51,43 @@ msgstr ""
 "El contingut del missatge s'ha perdut. Segurament es va enviar a\n"
 "diverses llistes i una altra llista l'ha gestionat, prèviament.\n"
 
-#: src/mailman/app/moderator.py:132
+#: src/mailman/app/moderator.py:133
 #, python-brace-format
 msgid "Posting of your message titled \"${subject}\""
 msgstr "Publicació del missatge titulat «${subject}»"
 
-#: src/mailman/app/moderator.py:133 src/mailman/app/moderator.py:267
+#: src/mailman/app/moderator.py:134 src/mailman/app/moderator.py:278
 #: src/mailman/rest/sub_moderation.py:119
 msgid "[No reason given]"
 msgstr "[No s'ha donat cap raó]"
 
-#: src/mailman/app/moderator.py:184
+#: src/mailman/app/moderator.py:185
 msgid "Forward of moderated message"
 msgstr "Reenviament de missatge moderat"
 
-#: src/mailman/app/moderator.py:233
+#: src/mailman/app/moderator.py:244
 #, python-brace-format
 msgid "New unsubscription request from ${mlist.display_name} by ${email}"
 msgstr "Nova sol·licitud de baixa de ${mlist.display_name} per ${email}"
 
-#: src/mailman/app/moderator.py:266
+#: src/mailman/app/moderator.py:277
 msgid "Unsubscription request"
 msgstr "Sol·licitud de baixa"
 
-#: src/mailman/app/moderator.py:307
+#: src/mailman/app/moderator.py:318
 msgid "Original Message"
 msgstr "Missatge original"
 
-#: src/mailman/app/moderator.py:310
+#: src/mailman/app/moderator.py:321
 #, python-brace-format
 msgid "Request to mailing list \"${display_name}\" rejected"
 msgstr "S'ha rebutjat la sol·licitud a la llista de correu «${display_name}»"
 
-#: src/mailman/app/notifications.py:94
+#: src/mailman/app/notifications.py:93
 msgid " (Digest mode)"
 msgstr " (Mode resum)"
 
-#: src/mailman/app/notifications.py:98
+#: src/mailman/app/notifications.py:97
 #, python-brace-format
 msgid "Welcome to the \"${mlist.display_name}\" mailing list${digmode}"
 msgstr "Benvingut a la llista de correu «${mlist.display_name}» ${digmode}"
@@ -111,59 +110,44 @@ msgstr "S'ha desactivat la subscripció de ${member} en ${mlist.display_name}"
 #: src/mailman/app/notifications.py:201
 #, python-brace-format
 msgid "${member}'s bounce score incremented on ${mlist.display_name}"
-msgstr ""
-"S'ha incrementat la puntuació de rebot de ${member} en ${mlist.display_name}"
+msgstr "S'ha incrementat la puntuació de rebot de ${member} en ${mlist.display_name}"
 
 #: src/mailman/app/notifications.py:227
 #, python-brace-format
 msgid "${member} unsubscribed from ${mlist.display_name} mailing list due to bounces"
-msgstr ""
-"S'ha donat de baixa a ${member} de la llista de correu ${mlist.display_name} "
-"a causa dels rebots"
+msgstr "S'ha donat de baixa a ${member} de la llista de correu ${mlist.display_name} a causa dels rebots"
 
 #: src/mailman/app/notifications.py:254
 #, python-brace-format
 msgid "Your subscription for ${mlist.display_name} mailing list has been disabled"
-msgstr ""
-"Se us ha desactivat la subscripció a la llista de correu ${mlist."
-"display_name}"
+msgstr "Se us ha desactivat la subscripció a la llista de correu ${mlist.display_name}"
 
-#: src/mailman/app/subscriptions.py:334
+#: src/mailman/app/subscriptions.py:328
 #, python-brace-format
 msgid "New subscription request to ${self.mlist.display_name} from ${self.address.email}"
-msgstr ""
-"Nova sol·licitud de subscripció a ${self.mlist.display_name} des de ${self."
-"address.email}"
+msgstr "Nova sol·licitud de subscripció a ${self.mlist.display_name} des de ${self.address.email}"
 
-#: src/mailman/app/subscriptions.py:502
+#: src/mailman/app/subscriptions.py:497
 #, python-brace-format
 msgid "New unsubscription request to ${self.mlist.display_name} from ${self.address.email}"
-msgstr ""
-"Nova sol·licitud de baixa a ${self.mlist.display_name} des de ${self.address."
-"email}"
+msgstr "Nova sol·licitud de baixa a ${self.mlist.display_name} des de ${self.address.email}"
 
-#: src/mailman/app/subscriptions.py:633
+#: src/mailman/app/subscriptions.py:629
 #, python-brace-format
 msgid "You have been invited to join the ${event.mlist.fqdn_listname} mailing list."
-msgstr ""
-"Us han convidat a unir-vos a la llista de correu ${event.mlist."
-"fqdn_listname}."
+msgstr "Us han convidat a unir-vos a la llista de correu ${event.mlist.fqdn_listname}."
+
+#: src/mailman/app/subscriptions.py:632
+#, python-brace-format
+msgid "Your confirmation is needed to leave the ${event.mlist.fqdn_listname} mailing list."
+msgstr "Cal la vostra confirmació per a abandonar la llista de correu ${event.mlist.fqdn_listname}."
 
 #: src/mailman/app/subscriptions.py:636
 #, python-brace-format
-msgid "Your confirmation is needed to leave the ${event.mlist.fqdn_listname} mailing list."
-msgstr ""
-"Cal la vostra confirmació per a abandonar la llista de correu ${event.mlist."
-"fqdn_listname}."
-
-#: src/mailman/app/subscriptions.py:640
-#, python-brace-format
 msgid "Your confirmation is needed to join the ${event.mlist.fqdn_listname} mailing list."
-msgstr ""
-"Cal la vostra confirmació per a unir-vos a la llista de correu ${event.mlist."
-"fqdn_listname}."
+msgstr "Cal la vostra confirmació per a unir-vos a la llista de correu ${event.mlist.fqdn_listname}."
 
-#: src/mailman/bin/mailman.py:102 src/mailman/bin/master.py:518
+#: src/mailman/bin/mailman.py:102 src/mailman/bin/master.py:565
 #: src/mailman/bin/runner.py:96
 msgid ""
 "    Configuration file to use.  If not given, the environment variable\n"
@@ -171,8 +155,7 @@ msgid ""
 "    default configuration file is loaded."
 msgstr ""
 "    Fitxer de configuració a utilitzar.  Si no es proporciona, es consulta\n"
-"    la variable d'entorn MAILMAN_CONFIG_FILE i es fa servir si està definida."
-"\n"
+"    la variable d'entorn MAILMAN_CONFIG_FILE i es fa servir si està definida.\n"
 "    Si no es proporciona, es carrega el fitxer de configuració per defecte."
 
 #: src/mailman/bin/mailman.py:110
@@ -180,15 +163,12 @@ msgid ""
 "    Running mailman commands as root is not recommended and mailman will\n"
 "    refuse to run as root unless this option is specified."
 msgstr ""
-"    No es recomana executar ordres del mailman com a administrador, i el "
-"mailman\n"
+"    No es recomana executar ordres del mailman com a administrador, i el mailman\n"
 "     refusarà executar-s'hi a no ser que s'especifiqui aquesta opció."
 
 #: src/mailman/bin/mailman.py:129
 msgid "    If you are sure you want to run as root, specify --run-as-root."
-msgstr ""
-"    Si esteu segur que voleu executar-ho com a administrador, especifiqueu "
-"--run-as-root."
+msgstr "    Si esteu segur que voleu executar-ho com a administrador, especifiqueu --run-as-root."
 
 #: src/mailman/bin/master.py:157
 msgid ""
@@ -205,8 +185,7 @@ msgid ""
 "master lock.  Try re-running ${program} with the --force flag."
 msgstr ""
 "No s'ha pogut adquirir el blocatge principal. Sembla com si hi hagués un\n"
-"blocatge principal obsolet. Proveu de tornar a executar ${program} amb "
-"l'opció --force."
+"blocatge principal obsolet. Proveu de tornar a executar ${program} amb l'opció --force."
 
 #: src/mailman/bin/master.py:169
 #, python-brace-format
@@ -220,11 +199,9 @@ msgid ""
 "\n"
 "Exiting."
 msgstr ""
-"El bloqueig principal no s'ha pogut adquirir, perquè sembla com si algun "
-"procés\n"
+"El bloqueig principal no s'ha pogut adquirir, perquè sembla com si algun procés\n"
 "en algun altre host pogués haver-ho adquirit.  No podem provar si hi ha cap\n"
-"bloqueig obsolet més enllà dels límits del host, pel que s'haurà de netejar "
-"manualment.\n"
+"bloqueig obsolet més enllà dels límits del host, pel que s'haurà de netejar manualment.\n"
 "\n"
 "Fitxer de blocatge: ${config.LOCK_FILE}\n"
 "Host de blocatge: ${hostname}\n"
@@ -248,7 +225,7 @@ msgstr ""
 "\n"
 "Se surt."
 
-#: src/mailman/bin/master.py:494
+#: src/mailman/bin/master.py:541
 msgid ""
 "    Master subprocess watcher.\n"
 "\n"
@@ -272,34 +249,25 @@ msgid ""
 msgstr ""
 "    Monitor principal de subprocessos.\n"
 "\n"
-"    Inicia i observa els corredors configurats, assegurant-se que romanguin "
-"vius i\n"
-"    actius. Cada corredor es bifurca i s'executa per torns, mentre el "
-"principal espera\n"
-"    els seus identificadors de procés.  Quan detecta que un corredor fill ha "
-"sortit, el\n"
+"    Inicia i observa els corredors configurats, assegurant-se que romanguin vius i\n"
+"    actius. Cada corredor es bifurca i s'executa per torns, mentre el principal espera\n"
+"    els seus identificadors de procés.  Quan detecta que un corredor fill ha sortit, el\n"
 "    podria reiniciar.\n"
 "\n"
 "    Els corredors responen a SIGINT, SIGTERM, SIGUSR1 i SIGHUP.  SIGINT,\n"
 "    SIGTERM i SIGUSR1 fan que un corredor acabi de forma neta. El principal\n"
-"    reiniciarà els corredors que hagin finalitzat a causa d'un SIGUSR1 o "
-"algun altre tipus de\n"
-"    condició de sortida (per exemple, a causa d'una excepció no capturada). "
-"SIGHUP fa que el\n"
-"    principal i els corredors tanquin els fitxers de registre, i els reobrin "
-"a continuació, en el\n"
+"    reiniciarà els corredors que hagin finalitzat a causa d'un SIGUSR1 o algun altre tipus de\n"
+"    condició de sortida (per exemple, a causa d'una excepció no capturada). SIGHUP fa que el\n"
+"    principal i els corredors tanquin els fitxers de registre, i els reobrin a continuació, en el\n"
 "    següent missatge presentat.\n"
 "\n"
 "    El principal també respon a SIGINT, SIGTERM, SIGUSR1 i SIGHUP, que\n"
-"    tan sols ho passa als corredors. Tingueu en compte que el principal "
-"tancarà i\n"
-"    reobrirà els seus propis fitxers de registre en rebre un SIGHUP. El "
-"principal també deixa\n"
-"    el seu propi identificador de procés al fitxer indicat en el fitxer de "
-"configuració, però\n"
+"    tan sols ho passa als corredors. Tingueu en compte que el principal tancarà i\n"
+"    reobrirà els seus propis fitxers de registre en rebre un SIGHUP. El principal també deixa\n"
+"    el seu propi identificador de procés al fitxer indicat en el fitxer de configuració, però\n"
 "    normalment no cal fer servir aquest PID directament."
 
-#: src/mailman/bin/master.py:525
+#: src/mailman/bin/master.py:572
 msgid ""
 "    Don't restart the runners when they exit because of an error or a SIGUSR1.\n"
 "    Use this only for debugging."
@@ -307,7 +275,7 @@ msgstr ""
 "    No reiniciïs els corredors quan surtin a causa d'un error o un SIGUSR1.\n"
 "    Utilitzeu-ho només per a depuració."
 
-#: src/mailman/bin/master.py:531
+#: src/mailman/bin/master.py:578
 msgid ""
 "    If the master watcher finds an existing master lock, it will normally exit\n"
 "    with an error message.  With this option,the master will perform an extra\n"
@@ -317,34 +285,25 @@ msgid ""
 "    remove the apparently stale lock and make another attempt to claim the\n"
 "    master lock."
 msgstr ""
-"    Si l'observador principal troba un blocatge principal existent, "
-"normalment\n"
-"    sortirà amb un missatge d'error.  Amb aquesta opció, el principal farà "
-"un\n"
-"    nivell addicional de comprovació.  Encara si un procés que coincideixi "
-"amb el\n"
-"    host/pid descrit en el fitxer de blocatge s'estigués executant, el "
-"principal\n"
+"    Si l'observador principal troba un blocatge principal existent, normalment\n"
+"    sortirà amb un missatge d'error.  Amb aquesta opció, el principal farà un\n"
+"    nivell addicional de comprovació.  Encara si un procés que coincideixi amb el\n"
+"    host/pid descrit en el fitxer de blocatge s'estigués executant, el principal\n"
 "    es tancaria igualment, demanant-vos eliminar manualment el bloqueig.\n"
-"    Però si no es troba cap procés que encaixi, el principal eliminarà el "
-"blocatge\n"
-"    aparentment obsolet i farà un altre intent de reclamar el blocatge "
-"principal."
+"    Però si no es troba cap procés que encaixi, el principal eliminarà el blocatge\n"
+"    aparentment obsolet i farà un altre intent de reclamar el blocatge principal."
 
-#: src/mailman/bin/master.py:544
+#: src/mailman/bin/master.py:591
 msgid ""
 "    Override the default set of runners that the master will invoke, which is\n"
 "    typically defined in the configuration file.  Multiple -r options may be\n"
 "    given.  The values for -r are passed straight through to bin/runner."
 msgstr ""
-"    Substitueix el conjunt predeterminat de corredors que invocarà el "
-"principal,\n"
-"    que està normalment definit al fitxer de configuració. Es podrien donar "
-"\n"
-"    múltiples opcions -r. Els valors de -r es passen directament a bin/"
-"runner."
+"    Substitueix el conjunt predeterminat de corredors que invocarà el principal,\n"
+"    que està normalment definit al fitxer de configuració. Es podrien donar \n"
+"    múltiples opcions -r. Els valors de -r es passen directament a bin/runner."
 
-#: src/mailman/bin/master.py:551 src/mailman/bin/runner.py:133
+#: src/mailman/bin/master.py:598 src/mailman/bin/runner.py:133
 msgid "Display more debugging information to the log file."
 msgstr "Mostra més informació de depuració al fitxer de registre."
 
@@ -387,10 +346,8 @@ msgid ""
 "    runner runs indefinitely until the process receives a signal.  This is not\n"
 "    compatible with runners that cannot be run once."
 msgstr ""
-"    Executa el corredor indicat exactament un cop a través del seu bucle "
-"principal. Altrament, el\n"
-"    corredor s'executa indefinidament fins que el procés rep un senyal. Això "
-"no és\n"
+"    Executa el corredor indicat exactament un cop a través del seu bucle principal. Altrament, el\n"
+"    corredor s'executa indefinidament fins que el procés rep un senyal. Això no és\n"
 "    compatible amb corredors que no es poden executar una sola vegada."
 
 #: src/mailman/bin/runner.py:115
@@ -411,24 +368,17 @@ msgid ""
 "    "
 msgstr ""
 "\n"
-"    Inicia el corredor indicat, que ha de ser una de les cadenes retornades "
-"per la\n"
+"    Inicia el corredor indicat, que ha de ser una de les cadenes retornades per la\n"
 "    opció -l.\n"
 "\n"
-"    Per a corredors que administren un directori de cua, s'indica un `slice: "
-"range` opcional\n"
-"    que s'usa per assignar diversos processos corredors a aquesta cua. El "
-"rang és el\n"
-"    nombre total de corredors per la cua, mentre que la secció és el nombre "
-"d'aquest\n"
-"    corredor de [0..rang). Per als corredors que no administren una cua, la "
-"secció i\n"
+"    Per a corredors que administren un directori de cua, s'indica un `slice: range` opcional\n"
+"    que s'usa per assignar diversos processos corredors a aquesta cua. El rang és el\n"
+"    nombre total de corredors per la cua, mentre que la secció és el nombre d'aquest\n"
+"    corredor de [0..rang). Per als corredors que no administren una cua, la secció i\n"
 "    rang s'ignoren.\n"
 "\n"
-"    Quan es fa servir el formulari `slice: range`, assegureu-vos que cada "
-"corredor per a la\n"
-"    cua rep el mateix valor de rang. Si no s'indica `slice: runner`, "
-"llavors\n"
+"    Quan es fa servir el formulari `slice: range`, assegureu-vos que cada corredor per a la\n"
+"    cua rep el mateix valor de rang. Si no s'indica `slice: runner`, llavors\n"
 "    s'usa 1:1.\n"
 "    "
 
@@ -477,19 +427,17 @@ msgstr "Darrera notificació de autoresposta d'avui"
 msgid "Hold a message and stop processing."
 msgstr "Reté un missatge i deté processament."
 
-#: src/mailman/chains/hold.py:199
+#: src/mailman/chains/hold.py:202
 #, python-brace-format
 msgid "Your message to ${mlist.fqdn_listname} awaits moderator approval"
-msgstr ""
-"El seu missatge a ${mlist.fqdn_listname} s'espera l'aprovació de l'moderador"
+msgstr "El seu missatge a ${mlist.fqdn_listname} s'espera l'aprovació de l'moderador"
 
-#: src/mailman/chains/hold.py:228
+#: src/mailman/chains/hold.py:231
 #, python-brace-format
 msgid "${mlist.fqdn_listname} post from ${msg.sender} requires approval"
-msgstr ""
-"L'enviament a ${mlist.fqdn_listname} de ${msg.sender} precisa d'aprovació"
+msgstr "L'enviament a ${mlist.fqdn_listname} de ${msg.sender} precisa d'aprovació"
 
-#: src/mailman/chains/hold.py:238
+#: src/mailman/chains/hold.py:246
 msgid ""
 "If you reply to this message, keeping the Subject: header intact, Mailman will\n"
 "discard the held message.  Do this if the message is spam.  If you reply to\n"
@@ -499,8 +447,7 @@ msgid ""
 msgstr ""
 "Si respon a aquest missatge, mantenint la capçalera Assumpte: intacta,\n"
 "Mailman descartarà el missatge retingut. Feu això si el missatge és spam.\n"
-"Si respon a aquest missatge incloent una capçalera Approved: amb la "
-"contrasenya\n"
+"Si respon a aquest missatge incloent una capçalera Approved: amb la contrasenya\n"
 "de la llista inclosa, s'aprovarà el missatge per enviar a la llista.\n"
 "La capçalera Approved: pot aparèixer també a la primera línia\n"
 "de el cos de la resposta."
@@ -567,9 +514,9 @@ msgid "    Override the list's setting for send_welcome_message."
 msgstr ""
 
 #: src/mailman/commands/cli_addmembers.py:146 src/mailman/commands/cli_import.py:68
-#: src/mailman/commands/cli_inject.py:75 src/mailman/commands/cli_members.py:195
+#: src/mailman/commands/cli_inject.py:75 src/mailman/commands/cli_members.py:206
 #: src/mailman/commands/cli_syncmembers.py:204
-#: src/mailman/commands/cli_withlist.py:293 src/mailman/commands/cli_withlist.py:300
+#: src/mailman/commands/cli_withlist.py:291 src/mailman/commands/cli_withlist.py:298
 #, python-brace-format
 msgid "No such list: ${listspec}"
 msgstr "No hi ha tal llista: ${listspec}"
@@ -626,8 +573,7 @@ msgid ""
 "    Section to use for the lookup.  If no key is given, all the key-value pairs\n"
 "    of the given section will be displayed."
 msgstr ""
-"    Secció que es farà servir per a la cerca. Si no es dóna cap clau, es "
-"mostraran totes les parells clau-valor\n"
+"    Secció que es farà servir per a la cerca. Si no es dóna cap clau, es mostraran totes les parells clau-valor\n"
 "    de la secció donada."
 
 #: src/mailman/commands/cli_conf.py:67
@@ -635,8 +581,7 @@ msgid ""
 "    Key to use for the lookup.  If no section is given, all the key-values pair\n"
 "    from any section matching the given key will be displayed."
 msgstr ""
-"    Clau que es farà per a la cerca. Si no es dóna cap secció, es mostraran "
-"totes les parelles clau-valor\n"
+"    Clau que es farà per a la cerca. Si no es dóna cap secció, es mostraran totes les parelles clau-valor\n"
 "    de qualsevol secció que encaixin amb la clau donada."
 
 #: src/mailman/commands/cli_control.py:42
@@ -653,17 +598,12 @@ msgid ""
 "    remove the apparently stale lock and make another attempt to claim the\n"
 "    master lock."
 msgstr ""
-"    Si l'observador principal troba un bloqueig principal existent, "
-"normalment sortirà\n"
+"    Si l'observador principal troba un bloqueig principal existent, normalment sortirà\n"
 "    amb un missatge d'error. Amb aquesta opció, el principal realitzarà un\n"
-"    nivell addicional de comprovació. Si un procés que coincideix amb el "
-"host/pid descrit en el\n"
-"    arxiu de bloqueig s'està executant, el principal encara es tancarà, el "
-"que fa que calgui eliminar\n"
-"    manualment el bloqueig. Però si no es troba cap procés coincident, el "
-"principal\n"
-"    eliminarà el bloqueig aparentment obsolet i farà un altre intent de "
-"reclamar el\n"
+"    nivell addicional de comprovació. Si un procés que coincideix amb el host/pid descrit en el\n"
+"    arxiu de bloqueig s'està executant, el principal encara es tancarà, el que fa que calgui eliminar\n"
+"    manualment el bloqueig. Però si no es troba cap procés coincident, el principal\n"
+"    eliminarà el bloqueig aparentment obsolet i farà un altre intent de reclamar el\n"
 "    bloqueig principal."
 
 #: src/mailman/commands/cli_control.py:57
@@ -691,22 +631,17 @@ msgid ""
 "    may have permission problems, such as being unable to delete a list's\n"
 "    archives through the web.  Tough luck!"
 msgstr ""
-"    Normalment, aquest script es negarà a córrer si l'identificador d'usuari "
-"i l'identificador de grup\n"
+"    Normalment, aquest script es negarà a córrer si l'identificador d'usuari i l'identificador de grup\n"
 "    no són l'usuari i grup 'mailman' (com es defineix quan va configurar\n"
-"    Mailman). Si s'executa com a root, aquest script canviarà a aquest "
-"usuari i grup\n"
+"    Mailman). Si s'executa com a root, aquest script canviarà a aquest usuari i grup\n"
 "    abans que es faci la comprovació.\n"
 "\n"
-"    Això pot ser un inconvenient per a les prova i depuració, de manera que "
-"l'opció -u\n"
+"    Això pot ser un inconvenient per a les prova i depuració, de manera que l'opció -u\n"
 "    vol dir que se salta el pas que estableix i comprova el uid/gid, i el\n"
-"    programa s'executa com l'usuari i el grup actuals. Aquesta opció no es "
-"recomana\n"
+"    programa s'executa com l'usuari i el grup actuals. Aquesta opció no es recomana\n"
 "    per a entorns de producció normals.\n"
 "\n"
-"    Tingueu en compte, però, que si s'executa amb -u i no està en el grup de "
-"mailman,\n"
+"    Tingueu en compte, però, que si s'executa amb -u i no està en el grup de mailman,\n"
 "    pot tenir problemes de permisos, com no poder eliminar els arxius\n"
 "    d'una llista a través de la web. Sort complicada!"
 
@@ -716,8 +651,7 @@ msgid ""
 "    Don't print status messages.  Error messages are still printed to standard\n"
 "    error."
 msgstr ""
-"    No mostrar missatges d'estat. Els missatges d'error es continuen "
-"mostrant a la sortida estàndard\n"
+"    No mostrar missatges d'estat. Els missatges d'error es continuen mostrant a la sortida estàndard\n"
 "    d'errors."
 
 #: src/mailman/commands/cli_control.py:93
@@ -726,9 +660,7 @@ msgstr "GNU Mailman ja s'està executant"
 
 #: src/mailman/commands/cli_control.py:97
 msgid "A previous run of GNU Mailman did not exit cleanly ({}).  Try using --force"
-msgstr ""
-"Una execució anterior de GNU Mailman no va sortir netament ({}). Proveu "
-"utilitzar --force"
+msgstr "Una execució anterior de GNU Mailman no va sortir netament ({}). Proveu utilitzar --force"
 
 #: src/mailman/commands/cli_control.py:105
 msgid "Starting Mailman's master runner"
@@ -766,9 +698,7 @@ msgstr "Detenint el corredor principal de Mailman"
 
 #: src/mailman/commands/cli_control.py:188
 msgid "Signal the Mailman processes to re-open their log files."
-msgstr ""
-"Enviar senyal als processos de Mailman per tornar a obrir els seus arxius de "
-"registre."
+msgstr "Enviar senyal als processos de Mailman per tornar a obrir els seus arxius de registre."
 
 #: src/mailman/commands/cli_control.py:197
 msgid "Reopening the Mailman runners"
@@ -855,8 +785,7 @@ msgid ""
 "    argument can either be a List-ID or a fully qualified list name.  Without\n"
 "    this option, operate on the digests for all mailing lists."
 msgstr ""
-"    Operar en aquesta llista de correu. Es poden donar diverses opcions "
-"--list.\n"
+"    Operar en aquesta llista de correu. Es poden donar diverses opcions --list.\n"
 "    L'argument pot ser un List-ID o un nom de llista complet. Sense\n"
 "    aquesta opció, operar amb els resums de totes les llistes de correu."
 
@@ -865,8 +794,7 @@ msgid ""
 "    Send any collected digests right now, even if the size threshold has not\n"
 "    yet been met."
 msgstr ""
-"    Enviar qualsevol resum recollit fins al moment, encara que el llindar de "
-"mida no\n"
+"    Enviar qualsevol resum recollit fins al moment, encara que el llindar de mida no\n"
 "    s'hagi assolit."
 
 #: src/mailman/commands/cli_digests.py:54
@@ -875,8 +803,7 @@ msgid ""
 "    given with --send, the volume number is incremented before any current\n"
 "    digests are sent."
 msgstr ""
-"    Incrementar el nombre de volum de resum i restablir el nombre de resum a "
-"un. Si\n"
+"    Incrementar el nombre de volum de resum i restablir el nombre de resum a un. Si\n"
 "    donat amb --send, el nombre de volum s'incrementa abans que qualsevol\n"
 "    resum s'enviï."
 
@@ -897,8 +824,7 @@ msgid ""
 "    Send any collected digests for the List only if their digest_send_periodic\n"
 "    is set to True."
 msgstr ""
-"    Enviar els resums recopilats per la Llista només si el seu "
-"digest_send_periodic\n"
+"    Enviar els resums recopilats per la Llista només si el seu digest_send_periodic\n"
 "    es posa a Cert."
 
 #: src/mailman/commands/cli_digests.py:79
@@ -913,23 +839,17 @@ msgstr "No s'ha trobat la llista: ${spec}"
 #: src/mailman/commands/cli_digests.py:100
 #, python-brace-format
 msgid "${mlist.list_id} is at volume ${mlist.volume}, number ${mlist.next_digest_number}"
-msgstr ""
-"${Mlist.list_id} es troba en el volum ${mlist.volume}, nombre ${mlist."
-"next_digest_number}"
+msgstr "${Mlist.list_id} es troba en el volum ${mlist.volume}, nombre ${mlist.next_digest_number}"
 
 #: src/mailman/commands/cli_digests.py:106
 #, python-brace-format
 msgid "${mlist.list_id} bumped to volume ${mlist.volume}, number ${mlist.next_digest_number}"
-msgstr ""
-"${Mlist.list_id} saltat al volum ${mlist.volume}, nombre ${mlist."
-"next_digest_number}"
+msgstr "${Mlist.list_id} saltat al volum ${mlist.volume}, nombre ${mlist.next_digest_number}"
 
 #: src/mailman/commands/cli_digests.py:112 src/mailman/commands/cli_digests.py:122
 #, python-brace-format
 msgid "${mlist.list_id} sent volume ${mlist.volume}, number ${mlist.next_digest_number}"
-msgstr ""
-"${Mlist.list_id} ha enviat volum ${mlist.volume}, nombre ${mlist."
-"next_digest_number}"
+msgstr "${Mlist.list_id} ha enviat volum ${mlist.volume}, nombre ${mlist.next_digest_number}"
 
 #: src/mailman/commands/cli_findmember.py:66
 msgid ""
@@ -958,8 +878,7 @@ msgstr ""
 
 #: src/mailman/commands/cli_gatenews.py:170
 msgid "Poll the NNTP server for messages to be gatewayed to mailing lists."
-msgstr ""
-"Consultar el servidor NNTP per a transferir missatges a llistes de correu."
+msgstr "Consultar el servidor NNTP per a transferir missatges a llistes de correu."
 
 #: src/mailman/commands/cli_gatenews.py:177
 msgid ""
@@ -1001,17 +920,14 @@ msgstr "Informació sobre aquesta instància de Mailman."
 
 #: src/mailman/commands/cli_info.py:40
 msgid "    File to send the output to.  If not given, standard output is used."
-msgstr ""
-"    Arxiu a on enviar la sortida. Si no s'indica, es fa servir la sortida "
-"estàndard."
+msgstr "    Arxiu a on enviar la sortida. Si no s'indica, es fa servir la sortida estàndard."
 
 #: src/mailman/commands/cli_info.py:45
 msgid ""
 "    A more verbose output including the file system paths that Mailman is\n"
 "    using."
 msgstr ""
-"    Una sortida més detallada que inclou les rutes de sistema d'arxius que "
-"Mailman està\n"
+"    Una sortida més detallada que inclou les rutes de sistema d'arxius que Mailman està\n"
 "    fent servir."
 
 #: src/mailman/commands/cli_inject.py:45
@@ -1025,8 +941,7 @@ msgid ""
 "    directories inside the queue directory.  If omitted, the incoming queue is\n"
 "    used."
 msgstr ""
-"    El nom de la cua a la qual s'injectarà el missatge. QUEUE ha de ser un "
-"dels\n"
+"    El nom de la cua a la qual s'injectarà el missatge. QUEUE ha de ser un dels\n"
 "    directoris dins del directori qfiles. Si s'omet, s 'utilitza\n"
 "    la cua entrant."
 
@@ -1048,10 +963,8 @@ msgid ""
 "    dictionary.  Use the format key=value.  Multiple -m options are\n"
 "    allowed."
 msgstr ""
-"    Parelles clau/valor de metadades addicionals per afegir a les metadades "
-"del diccionari\n"
-"    del missatge. Utilitza el format clau=valor. Es permeten més d'una opció "
-"-m."
+"    Parelles clau/valor de metadades addicionals per afegir a les metadades del diccionari\n"
+"    del missatge. Utilitza el format clau=valor. Es permeten més d'una opció -m."
 
 #: src/mailman/commands/cli_inject.py:79
 #, python-brace-format
@@ -1085,8 +998,7 @@ msgid ""
 "    "
 msgstr ""
 "    Enumerar només les llistes de correu allotjades al domini donat, que\n"
-"    ha de ser el nom d'amfitrió de correu. Es poden donar diverses opcions "
-"-d.\n"
+"    ha de ser el nom d'amfitrió de correu. Es poden donar diverses opcions -d.\n"
 "    "
 
 #: src/mailman/commands/cli_lists.py:91
@@ -1109,8 +1021,7 @@ msgstr ""
 "    Crear una llista de correu.\n"
 "\n"
 "    El 'nom de llista complet', és a dir, l'adreça d'enviament a la llista\n"
-"    és necessari. Ha de ser una adreça de correu electrònic vàlida i el "
-"domini ha d'estar\n"
+"    és necessari. Ha de ser una adreça de correu electrònic vàlida i el domini ha d'estar\n"
 "    registrat a Mailman. Els noms de llista han de ser en minúscules."
 
 #: src/mailman/commands/cli_lists.py:134
@@ -1129,12 +1040,10 @@ msgid ""
 "    send a list creation notice to the address.  More than one owner can be\n"
 "    specified."
 msgstr ""
-"    Especificar una adreça de correu de l'propietari de la llista. Si la "
-"direcció no està actualment\n"
+"    Especificar una adreça de correu de l'propietari de la llista. Si la direcció no està actualment\n"
 "    registrada a Mailman, la direcció es registra i vincula a un usuari.\n"
 "    Mailman enviarà un missatge de confirmació a la direcció, però també\n"
-"    enviarà un avís de creació de llista a l'adreça. Es pot especificar més "
-"d'un\n"
+"    enviarà un avís de creació de llista a l'adreça. Es pot especificar més d'un\n"
 "    propietari."
 
 #: src/mailman/commands/cli_lists.py:149
@@ -1155,12 +1064,9 @@ msgid ""
 "    the default behavior, but these options are provided for backward\n"
 "    compatibility.  With -D do not register the mailing list's domain."
 msgstr ""
-"    Registrar el domini de la llista de correu si encara no està registrat. "
-"Aquest és\n"
-"    el comportament predeterminat, però aquestes opcions es proporcionen "
-"per\n"
-"    compatibilitat amb el passat. Amb -D no registrar el domini de la llista "
-"de correu."
+"    Registrar el domini de la llista de correu si encara no està registrat. Aquest és\n"
+"    el comportament predeterminat, però aquestes opcions es proporcionen per\n"
+"    compatibilitat amb el passat. Amb -D no registrar el domini de la llista de correu."
 
 #: src/mailman/commands/cli_lists.py:170
 #, python-brace-format
@@ -1215,12 +1121,12 @@ msgstr "No s'ha trobat cap llista que encaixi amb l'espec: ${listspec}"
 msgid "Removed list: ${listspec}"
 msgstr "Llista eliminada: ${listspec}"
 
-#: src/mailman/commands/cli_members.py:90
+#: src/mailman/commands/cli_members.py:89
 #, python-brace-format
 msgid "${mlist.list_id} has no members"
 msgstr "${mlist.list_id} no té membres"
 
-#: src/mailman/commands/cli_members.py:112
+#: src/mailman/commands/cli_members.py:116
 msgid ""
 "    Display a mailing list's members.\n"
 "    Filtering along various criteria can be done when displaying.\n"
@@ -1229,32 +1135,32 @@ msgid ""
 "    "
 msgstr ""
 
-#: src/mailman/commands/cli_members.py:121
+#: src/mailman/commands/cli_members.py:125
 msgid ""
 "    [MODE] Add all member addresses in FILENAME.  This option is removed.\n"
 "    Use 'mailman addmembers' instead."
 msgstr ""
 
-#: src/mailman/commands/cli_members.py:127
+#: src/mailman/commands/cli_members.py:131
 msgid ""
 "    [MODE] Delete all member addresses found in FILENAME.\n"
 "    This option is removed. Use 'mailman delmembers' instead."
 msgstr ""
 
-#: src/mailman/commands/cli_members.py:133
+#: src/mailman/commands/cli_members.py:137
 msgid ""
 "    [MODE] Synchronize all member addresses of the specified mailing list\n"
 "    with the member addresses found in FILENAME.\n"
 "    This option is removed. Use 'mailman syncmembers' instead."
 msgstr ""
 
-#: src/mailman/commands/cli_members.py:140
+#: src/mailman/commands/cli_members.py:144
 msgid ""
 "    Display output to FILENAME instead of stdout.  FILENAME\n"
 "    can be '-' to indicate standard output."
 msgstr ""
 
-#: src/mailman/commands/cli_members.py:147
+#: src/mailman/commands/cli_members.py:151
 msgid ""
 "    Display only members with a given ROLE.\n"
 "    The role may be 'any', 'member', 'nonmember', 'owner', 'moderator',\n"
@@ -1262,22 +1168,22 @@ msgid ""
 "    If not given, then 'member' role is assumed."
 msgstr ""
 
-#: src/mailman/commands/cli_members.py:155
+#: src/mailman/commands/cli_members.py:159
 msgid "    Display only regular delivery members."
 msgstr ""
 
-#: src/mailman/commands/cli_members.py:166
+#: src/mailman/commands/cli_members.py:176
 msgid "    This option has no effect. It exists for backwards compatibility only."
 msgstr ""
 
-#: src/mailman/commands/cli_members.py:172
+#: src/mailman/commands/cli_members.py:182
 msgid ""
 "    Display only digest members of kind.\n"
 "    'any' means any digest type, 'plaintext' means only plain text (rfc 1153)\n"
 "    type digests, 'mime' means MIME type digests."
 msgstr ""
 
-#: src/mailman/commands/cli_members.py:180
+#: src/mailman/commands/cli_members.py:190
 msgid ""
 "    Display only members with a given delivery status.\n"
 "    'enabled' means all members whose delivery is enabled, 'any' means\n"
@@ -1291,9 +1197,7 @@ msgstr ""
 
 #: src/mailman/commands/cli_notify.py:40
 msgid "Notify list owners/moderators of pending requests."
-msgstr ""
-"Notificar als propietaris/moderadors de la llista sobre sol·licituds "
-"pendents."
+msgstr "Notificar als propietaris/moderadors de la llista sobre sol·licituds pendents."
 
 #: src/mailman/commands/cli_notify.py:43
 msgid ""
@@ -1301,8 +1205,7 @@ msgid ""
 "    argument can either be a List-ID or a fully qualified list name.  Without\n"
 "    this option, operate on the requests for all mailing lists."
 msgstr ""
-"    Operar en aquesta llista de correu. Es poden donar diverses opcions "
-"--list.\n"
+"    Operar en aquesta llista de correu. Es poden donar diverses opcions --list.\n"
 "    L'argument pot ser un List-ID o un nom de llista complet. Sense\n"
 "    aquesta opció, operar en les sol·licituds de totes les llistes de correu."
 
@@ -1381,8 +1284,7 @@ msgid ""
 "    Start an interactive Python session, with a variable called 'm'\n"
 "    containing the list of unpickled objects."
 msgstr ""
-"    Iniciar una sessió interactiva de Python, amb una variable anomenada 'm'"
-"\n"
+"    Iniciar una sessió interactiva de Python, amb una variable anomenada 'm'\n"
 "    que contingui la llista d'objectes descodificats."
 
 #: src/mailman/commands/cli_qfile.py:67
@@ -1478,8 +1380,7 @@ msgid ""
 "    Discard all shunted messages instead of moving them back to their original\n"
 "    queue."
 msgstr ""
-"    Descarta tots els missatges desviats en lloc de moure de tornada a la "
-"seva cua\n"
+"    Descarta tots els missatges desviats en lloc de moure de tornada a la seva cua\n"
 "    original."
 
 #: src/mailman/commands/cli_unshunt.py:50
@@ -1495,19 +1396,19 @@ msgstr ""
 msgid "Display Mailman's version."
 msgstr "Mostra la versió de Mailman."
 
-#: src/mailman/commands/cli_withlist.py:76
+#: src/mailman/commands/cli_withlist.py:74
 msgid "ipython is not available, set use_ipython to no"
 msgstr "ipython no està disponible, posar use_ipython a no"
 
-#: src/mailman/commands/cli_withlist.py:86
+#: src/mailman/commands/cli_withlist.py:84
 msgid "readline not available"
 msgstr "readline no disponible"
 
-#: src/mailman/commands/cli_withlist.py:134
+#: src/mailman/commands/cli_withlist.py:132
 msgid "Invalid value for [shell]use_python: {}"
 msgstr "Valor no vàlid per a [shell]use_python: {}"
 
-#: src/mailman/commands/cli_withlist.py:150
+#: src/mailman/commands/cli_withlist.py:148
 msgid ""
 "This script provides you with a general framework for interacting with a\n"
 "mailing list."
@@ -1515,7 +1416,7 @@ msgstr ""
 "Aquest script li proporciona un marc general per interactuar amb una\n"
 "llista de correu."
 
-#: src/mailman/commands/cli_withlist.py:154
+#: src/mailman/commands/cli_withlist.py:152
 msgid ""
 "There are two ways to use this script: interactively or programmatically.\n"
 "Using it interactively allows you to play with, examine and modify a mailing\n"
@@ -1523,16 +1424,13 @@ msgid ""
 "variable 'm' will be available in the global namespace.  It will reference the\n"
 "mailing list object."
 msgstr ""
-"Hi ha dues formes d'usar aquest script: de forma interactiva o per programa."
-"\n"
+"Hi ha dues formes d'usar aquest script: de forma interactiva o per programa.\n"
 "L'ús interactiu permet jugar amb, examinar i modificar una llista de\n"
-"correu des de l'intèrpret interactiu de Python. Quan s'executa de forma "
-"interactiva,\n"
-"la variable 'm' estarà disponible a l'espai de noms global. Farà referència "
-"a\n"
+"correu des de l'intèrpret interactiu de Python. Quan s'executa de forma interactiva,\n"
+"la variable 'm' estarà disponible a l'espai de noms global. Farà referència a\n"
 "l'objecte llista de correu."
 
-#: src/mailman/commands/cli_withlist.py:161
+#: src/mailman/commands/cli_withlist.py:159
 msgid ""
 "Programmatically, you can write a function to operate on a mailing list, and\n"
 "this script will take care of the housekeeping (see below for examples).  In\n"
@@ -1543,8 +1441,7 @@ msgid ""
 "where `listspec` is either the posting address of the mailing list\n"
 "(e.g. ant@example.com), or the List-ID (e.g. ant.example.com)."
 msgstr ""
-"Per programa, podeu escriure una funció per operar a una llista de correu, "
-"i\n"
+"Per programa, podeu escriure una funció per operar a una llista de correu, i\n"
 "aquest script s'encarregarà de la neteja (veure exemples a sota). En\n"
 "en aquest cas, la sintaxi d'ús general és:\n"
 "\n"
@@ -1553,7 +1450,7 @@ msgstr ""
 "on `listspec` és l'adreça d'enviament a la llista de correu\n"
 "(Per exemple, ant@example.com) o la List-ID (per exemple, ant.example.com)."
 
-#: src/mailman/commands/cli_withlist.py:171
+#: src/mailman/commands/cli_withlist.py:169
 msgid ""
 "Here's an example of how to use the --run option.  Say you have a file in the\n"
 "Mailman installation directory called 'listaddr.py', with the following two\n"
@@ -1571,10 +1468,8 @@ msgid ""
 "\n"
 "If -l is not given then you can run a function that takes no arguments.\n"
 msgstr ""
-"Aquest és un exemple de com utilitzar l'opció --run. Diguem que teniu un "
-"arxiu en el\n"
-"directori d'instal·lació de Mailman anomenat 'listaddr.py', amb les dues "
-"següents\n"
+"Aquest és un exemple de com utilitzar l'opció --run. Diguem que teniu un arxiu en el\n"
+"directori d'instal·lació de Mailman anomenat 'listaddr.py', amb les dues següents\n"
 "funcions:\n"
 "\n"
 "def listaddr (mlist):\n"
@@ -1583,15 +1478,13 @@ msgstr ""
 "def requestaddr (mlist):\n"
 "    print (mlist.request_address)\n"
 "\n"
-"Els mètodes d'execució prenen al menys un argument, l'objecte de llista de "
-"correu per a operar sobre ella.\n"
+"Els mètodes d'execució prenen al menys un argument, l'objecte de llista de correu per a operar sobre ella.\n"
 "Els arguments addicionals a la línia de comandes es passen com a\n"
 "arguments posicionals a l'invocable.\n"
 "\n"
-"Si no es proporciona -l, es pot executar una funció que no agafa cap "
-"argument.\n"
+"Si no es proporciona -l, es pot executar una funció que no agafa cap argument.\n"
 
-#: src/mailman/commands/cli_withlist.py:189
+#: src/mailman/commands/cli_withlist.py:187
 msgid ""
 "You can print the list's posting address by running the following from the\n"
 "command line:\n"
@@ -1609,7 +1502,7 @@ msgstr ""
 "Corrent listaddr.listaddr () ...\n"
 "ant@example.com"
 
-#: src/mailman/commands/cli_withlist.py:198
+#: src/mailman/commands/cli_withlist.py:196
 msgid ""
 "And you can print the list's request address by running:\n"
 "\n"
@@ -1625,7 +1518,7 @@ msgstr ""
 "Corrent listaddr.requestaddr () ...\n"
 "ant-request@example.com"
 
-#: src/mailman/commands/cli_withlist.py:206
+#: src/mailman/commands/cli_withlist.py:204
 msgid ""
 "As another example, say you wanted to change the display name for a particular\n"
 "mailing list.  You could put the following function in a file called\n"
@@ -1641,8 +1534,7 @@ msgid ""
 "Note that you do not have to explicitly commit any database transactions, as\n"
 "Mailman will do this for you (assuming no errors occured)."
 msgstr ""
-"Com a un altre exemple, suposem que voleu canviar el nom a mostrar d'una "
-"determinada\n"
+"Com a un altre exemple, suposem que voleu canviar el nom a mostrar d'una determinada\n"
 "llista de correu. Podeu posar la següent funció en un arxiu anomenat\n"
 "`change.py`:\n"
 "\n"
@@ -1653,11 +1545,10 @@ msgstr ""
 "\n"
 "% Mailman withlist -r canvi -l ant@example.com 'La meva List'\n"
 "\n"
-"Recordeu que no cal confirmar explícitament cap transacció de la base de "
-"dades, ja que\n"
+"Recordeu que no cal confirmar explícitament cap transacció de la base de dades, ja que\n"
 "Mailman farà això per vostè (suposant que no s'hagin produït errors)."
 
-#: src/mailman/commands/cli_withlist.py:225
+#: src/mailman/commands/cli_withlist.py:223
 msgid ""
 "    Operate on a mailing list.\n"
 "\n"
@@ -1669,16 +1560,15 @@ msgstr ""
 "    Per ajuda detallada, veure --details\n"
 "    "
 
-#: src/mailman/commands/cli_withlist.py:233
+#: src/mailman/commands/cli_withlist.py:231
 msgid ""
 "    Leaves you at an interactive prompt after all other processing is complete.\n"
 "    This is the default unless the --run option is given."
 msgstr ""
-"    Li deixa en un cursor interactiu un cop s'hagi completat la resta de "
-"processament.\n"
+"    Li deixa en un cursor interactiu un cop s'hagi completat la resta de processament.\n"
 "    Això és per defecte a menys que es doni l'opció --run."
 
-#: src/mailman/commands/cli_withlist.py:238
+#: src/mailman/commands/cli_withlist.py:236
 msgid ""
 "\n"
 "    Run a script.  The argument is the module path to a callable.  This\n"
@@ -1693,25 +1583,22 @@ msgid ""
 "    "
 msgstr ""
 "\n"
-"    Executar un script. L'argument és la ruta d'accés del mòdul a alguna "
-"cosa invocable. Aquest\n"
+"    Executar un script. L'argument és la ruta d'accés del mòdul a alguna cosa invocable. Aquest\n"
 "    s'importarà i després, si també es dóna --listspec/-l,\n"
 "    s'invoca amb la llista de correu com a primer argument. Si es donen\n"
 "    arguments addicionals a la fi de la línia de comandes, es passen com\n"
-"    arguments posicionals posteriors a l'invocable. Per a més ajuda, "
-"consultar\n"
+"    arguments posicionals posteriors a l'invocable. Per a més ajuda, consultar\n"
 "    --details.\n"
 "\n"
-"    Si no es proporciona cap argument --listspec/-l, la funció de script s'"
-"invoca\n"
+"    Si no es proporciona cap argument --listspec/-l, la funció de script s'invoca\n"
 "    sense arguments.\n"
 "    "
 
-#: src/mailman/commands/cli_withlist.py:254
+#: src/mailman/commands/cli_withlist.py:252
 msgid "Print detailed instructions and exit."
 msgstr "Mostrar instruccions detallades i sortir."
 
-#: src/mailman/commands/cli_withlist.py:258
+#: src/mailman/commands/cli_withlist.py:256
 msgid ""
 "    A specification of the mailing list to operate on.  This may be the posting\n"
 "    address of the list, or its List-ID.  The argument can also be a Python\n"
@@ -1720,47 +1607,43 @@ msgid ""
 "    LISTSPEC must start with a ^ (and the matching is done with re.match().\n"
 "    LISTSPEC cannot be a regular expression unless --run is given."
 msgstr ""
-"    Una especificació de la llista de correu sobre la qual operar. Aquesta "
-"pot ser l'adreça\n"
-"    d'enviament a la llista, o el seu List-ID. L'argument també pot ser una "
-"expressió regular\n"
+"    Una especificació de la llista de correu sobre la qual operar. Aquesta pot ser l'adreça\n"
+"    d'enviament a la llista, o el seu List-ID. L'argument també pot ser una expressió regular\n"
 "    de Python, en aquest cas es compara tant amb l'adreça\n"
-"    d'enviament i List-ID de totes les llistes de correu. Per utilitzar una "
-"expressió regular,\n"
-"    LISTSPEC ha de començar amb ^ (i la coincidència es realitza amb re."
-"match().\n"
+"    d'enviament i List-ID de totes les llistes de correu. Per utilitzar una expressió regular,\n"
+"    LISTSPEC ha de començar amb ^ (i la coincidència es realitza amb re.match().\n"
 "    LISTSPEC no pot ser una expressió regular llevat que es posi --run."
 
-#: src/mailman/commands/cli_withlist.py:274
+#: src/mailman/commands/cli_withlist.py:272
 msgid "Regular expression requires --run"
 msgstr "L'expressió regular requereix --run"
 
-#: src/mailman/commands/cli_withlist.py:301
+#: src/mailman/commands/cli_withlist.py:299
 #, python-brace-format
 msgid "The variable 'm' is the ${listspec} mailing list"
 msgstr "La variable 'm' és la ${listspec} de la llista de correu"
 
-#: src/mailman/commands/eml_confirm.py:40
+#: src/mailman/commands/eml_confirm.py:43
 msgid "Confirm a subscription or held message request."
 msgstr ""
 
-#: src/mailman/commands/eml_confirm.py:47
+#: src/mailman/commands/eml_confirm.py:50
 msgid "No confirmation token found"
 msgstr "No s'ha trobat cap testimoni de confirmació"
 
-#: src/mailman/commands/eml_confirm.py:60 src/mailman/commands/eml_confirm.py:95
+#: src/mailman/commands/eml_confirm.py:63 src/mailman/commands/eml_confirm.py:99
 msgid "Confirmation token did not match"
 msgstr "Les claus de confirmació no coincideixen"
 
-#: src/mailman/commands/eml_confirm.py:91
+#: src/mailman/commands/eml_confirm.py:95
 msgid "Confirmed"
 msgstr "Confirmat"
 
-#: src/mailman/commands/eml_confirm.py:108
+#: src/mailman/commands/eml_confirm.py:112
 msgid "Invalid Approved: password"
 msgstr ""
 
-#: src/mailman/commands/eml_confirm.py:111
+#: src/mailman/commands/eml_confirm.py:115
 #, python-brace-format
 msgid "Message ${message}"
 msgstr ""
@@ -1815,27 +1698,27 @@ msgstr "Unir-se a aquesta llista de correu."
 msgid "${self.name}: No valid address found to subscribe"
 msgstr "${self.name}: No es troba cap adreça vàlida per a subscriure"
 
-#: src/mailman/commands/eml_membership.py:130
+#: src/mailman/commands/eml_membership.py:131
 #, python-brace-format
 msgid "${person} has a pending subscription for ${listname}"
 msgstr "${person} té una subscripció pendent per ${listname}"
 
-#: src/mailman/commands/eml_membership.py:133
+#: src/mailman/commands/eml_membership.py:135
 #, python-brace-format
 msgid "Confirmation email sent to ${person}"
 msgstr "Correu de confirmació enviat a ${person}"
 
-#: src/mailman/commands/eml_membership.py:150
-#: src/mailman/commands/eml_membership.py:160
+#: src/mailman/commands/eml_membership.py:152
+#: src/mailman/commands/eml_membership.py:162
 #, python-brace-format
 msgid "bad argument: ${argument}"
 msgstr "argument incorrecte: ${argument}"
 
-#: src/mailman/commands/eml_membership.py:173
+#: src/mailman/commands/eml_membership.py:175
 msgid "An alias for 'join'."
 msgstr "Un sinònim de 'unir-se'."
 
-#: src/mailman/commands/eml_membership.py:184
+#: src/mailman/commands/eml_membership.py:186
 msgid ""
 "Leave this mailing list.\n"
 "\n"
@@ -1845,43 +1728,41 @@ msgstr ""
 "\n"
 "Se li pot demanar confirmar la seva sol·licitud."
 
-#: src/mailman/commands/eml_membership.py:187
+#: src/mailman/commands/eml_membership.py:189
 msgid "Leave this mailing list."
 msgstr "Deixar aquesta llista de correu."
 
-#: src/mailman/commands/eml_membership.py:194
+#: src/mailman/commands/eml_membership.py:196
 #, python-brace-format
 msgid "${self.name}: No valid email address found to unsubscribe"
-msgstr ""
-"${self.name}: No es troba una adreça de correu vàlida per a donar-se de baixa"
+msgstr "${self.name}: No es troba una adreça de correu vàlida per a donar-se de baixa"
 
-#: src/mailman/commands/eml_membership.py:200
+#: src/mailman/commands/eml_membership.py:202
 #, python-brace-format
 msgid "No registered user for email address: ${email}"
 msgstr "No hi ha usuari registrat per a l'adreça de correu: ${email}"
 
-#: src/mailman/commands/eml_membership.py:207
+#: src/mailman/commands/eml_membership.py:210
 #, python-brace-format
 msgid "Invalid or unverified email address: ${email}"
 msgstr "Adreça de correu no vàlida o no verificada: ${email}"
 
-#: src/mailman/commands/eml_membership.py:226
+#: src/mailman/commands/eml_membership.py:230
 #, python-brace-format
 msgid "${self.name}: ${email} is not a member of ${mlist.fqdn_listname}"
 msgstr "${self.name}: ${email} no és membre de ${mlist.fqdn_listname}"
 
-#: src/mailman/commands/eml_membership.py:237
+#: src/mailman/commands/eml_membership.py:241
 #, python-brace-format
 msgid "${person} left ${mlist.fqdn_listname}"
 msgstr "${person} va deixar ${mlist.fqdn_listname}"
 
-#: src/mailman/commands/eml_membership.py:239
+#: src/mailman/commands/eml_membership.py:243
 #, python-brace-format
 msgid "Confirmation email sent to ${person} to leave ${mlist.fqdn_listname}"
-msgstr ""
-"Correu de confirmació enviat a ${person} per sortir de ${mlist.fqdn_listname}"
+msgstr "Correu de confirmació enviat a ${person} per sortir de ${mlist.fqdn_listname}"
 
-#: src/mailman/commands/eml_membership.py:249
+#: src/mailman/commands/eml_membership.py:253
 msgid "An alias for 'leave'."
 msgstr "Un sinònim de 'deixar'."
 
@@ -1930,8 +1811,7 @@ msgstr "Realitzar alguna comptabilització després d'un enviament reeixit."
 
 #: src/mailman/handlers/arc_sign.py:66
 msgid "Perform ARC auth checks and attach resulting headers"
-msgstr ""
-"Feu comprovacions d'autenticació ARC i adjuntar les capçaleres resultants"
+msgstr "Feu comprovacions d'autenticació ARC i adjuntar les capçaleres resultants"
 
 #: src/mailman/handlers/avoid_duplicates.py:44
 msgid "Suppress some duplicates of the same message."
@@ -1949,16 +1829,16 @@ msgstr "Netejar certes capçaleres de tots els missatges."
 msgid "Modify message headers."
 msgstr "Modificar capçaleres de missatges."
 
-#: src/mailman/handlers/decorate.py:246
+#: src/mailman/handlers/decorate.py:247
 msgid "Decorate a message with headers and footers."
 msgstr "Decorar un missatge amb capçaleres i peus de pàgina."
 
-#: src/mailman/handlers/dmarc.py:127
+#: src/mailman/handlers/dmarc.py:128
 #, python-brace-format
 msgid "${realname} via ${mlist.display_name}"
 msgstr "${realname} via ${mlist.display_name}"
 
-#: src/mailman/handlers/dmarc.py:228
+#: src/mailman/handlers/dmarc.py:229
 msgid "Apply DMARC mitigations."
 msgstr "Aplicar mitigacions DMARC."
 
@@ -1978,7 +1858,7 @@ msgid ""
 "attached.\n"
 msgstr ""
 
-#: src/mailman/handlers/mime_delete.py:62
+#: src/mailman/handlers/mime_delete.py:63
 #, python-brace-format
 msgid ""
 "The attached message matched the ${mlist.display_name} mailing list's content\n"
@@ -1993,11 +1873,11 @@ msgstr ""
 "missatge.\n"
 "\n"
 
-#: src/mailman/handlers/mime_delete.py:69
+#: src/mailman/handlers/mime_delete.py:70
 msgid "Content filter message notification"
 msgstr "Notificació de missatge de filtre de contingut"
 
-#: src/mailman/handlers/mime_delete.py:97
+#: src/mailman/handlers/mime_delete.py:98
 msgid ""
 "\n"
 "___________________________________________\n"
@@ -2005,39 +1885,39 @@ msgid ""
 "following MIME parts from this message.\n"
 msgstr ""
 
-#: src/mailman/handlers/mime_delete.py:110
+#: src/mailman/handlers/mime_delete.py:111
 msgid "The message's content type was explicitly disallowed"
 msgstr "El tipus de contingut del missatge ha estat inhabilitat explícitament"
 
-#: src/mailman/handlers/mime_delete.py:115
+#: src/mailman/handlers/mime_delete.py:116
 msgid "The message's content type was not explicitly allowed"
 msgstr "El tipus de contingut del missatge no s'ha permès explícitament"
 
-#: src/mailman/handlers/mime_delete.py:124
+#: src/mailman/handlers/mime_delete.py:125
 msgid "The message's file extension was explicitly disallowed"
 msgstr "L'extensió de fitxer del missatge s'ha inhabilitat explícitament"
 
-#: src/mailman/handlers/mime_delete.py:128
+#: src/mailman/handlers/mime_delete.py:129
 msgid "The message's file extension was not explicitly allowed"
 msgstr "L'extensió de fitxer del missatge no s'ha permès explícitament"
 
-#: src/mailman/handlers/mime_delete.py:140
+#: src/mailman/handlers/mime_delete.py:142
 msgid "After content filtering, the message was empty"
 msgstr "Després de filtrar el contingut, el missatge estava buit"
 
-#: src/mailman/handlers/mime_delete.py:152 src/mailman/handlers/mime_delete.py:291
+#: src/mailman/handlers/mime_delete.py:154 src/mailman/handlers/mime_delete.py:317
 msgid ""
 "\n"
 "Replaced multipart/alternative part with first alternative.\n"
 msgstr ""
 
-#: src/mailman/handlers/mime_delete.py:239 src/mailman/handlers/mime_delete.py:246
-#: src/mailman/handlers/mime_delete.py:255 src/mailman/handlers/mime_delete.py:261
+#: src/mailman/handlers/mime_delete.py:265 src/mailman/handlers/mime_delete.py:272
+#: src/mailman/handlers/mime_delete.py:281 src/mailman/handlers/mime_delete.py:287
 #, python-brace-format
 msgid "Name: ${fname}\n"
 msgstr ""
 
-#: src/mailman/handlers/mime_delete.py:374
+#: src/mailman/handlers/mime_delete.py:400
 msgid "Filter the MIME content of messages."
 msgstr "Filtrar el contingut MIME dels missatges."
 
@@ -2052,22 +1932,19 @@ msgstr "Enviar respostes automàtiques."
 #: src/mailman/handlers/replybot.py:101
 #, python-brace-format
 msgid "Auto-response for your message to the \"${display_name}\" mailing list"
-msgstr ""
-"Resposta automàtica per al seu missatge a la llista de correu \""
-"${display_name}\""
+msgstr "Resposta automàtica per al seu missatge a la llista de correu \"${display_name}\""
 
 #: src/mailman/handlers/replybot.py:114
 msgid "The Mailman Replybot"
 msgstr "El contestador automàtic de Mailman"
 
-#: src/mailman/handlers/rfc_2369.py:128
+#: src/mailman/handlers/rfc_2369.py:131
 msgid "Add the RFC 2369 List-* headers."
 msgstr "Afegir les capçaleres RFC 2369 List-*."
 
 #: src/mailman/handlers/subject_prefix.py:158
 msgid "Add a list-specific prefix to the Subject header value."
-msgstr ""
-"Afegir un prefix específic de la llista a la valor de la capçalera Assumpte."
+msgstr "Afegir un prefix específic de la llista a la valor de la capçalera Assumpte."
 
 #: src/mailman/handlers/tagger.py:173
 msgid "Tag messages with topic matches."
@@ -2091,9 +1968,7 @@ msgstr "Moure el missatge a la cua de notícies sortint."
 
 #: src/mailman/handlers/validate_authenticity.py:120
 msgid "Perform auth checks and attach Authentication-Results header."
-msgstr ""
-"Realitzar les comprovacions d'autenticació i adjuntar la capçalera "
-"Authentication-Results."
+msgstr "Realitzar les comprovacions d'autenticació i adjuntar la capçalera Authentication-Results."
 
 #: src/mailman/interfaces/pipeline.py:53
 msgid "[No details are available]"
@@ -2107,7 +1982,7 @@ msgstr "[No es donen raons]"
 msgid "The built-in owner pipeline."
 msgstr "El canal integrat de propietari."
 
-#: src/mailman/pipelines/builtin.py:43
+#: src/mailman/pipelines/builtin.py:44
 msgid "The built-in posting pipeline."
 msgstr "El canal integrat d'enviament."
 
@@ -2123,7 +1998,7 @@ msgstr "Sol·licitud de subscripció"
 msgid "Catch mis-addressed email commands."
 msgstr "Capturar comandaments de correu mal direccionats."
 
-#: src/mailman/rules/administrivia.py:97
+#: src/mailman/rules/administrivia.py:99
 msgid "Message contains administrivia"
 msgstr "El missatge conté detalls administrius"
 
@@ -2155,23 +2030,18 @@ msgstr ""
 msgid "Message quotes digest boilerplate"
 msgstr ""
 
-#: src/mailman/rules/dmarc.py:307
+#: src/mailman/rules/dmarc.py:315
 msgid "Find DMARC policy of From: domain."
 msgstr "Buscar la directiva DMARC del domini De:."
 
-#: src/mailman/rules/dmarc.py:327
+#: src/mailman/rules/dmarc.py:335
 msgid "DMARC moderation"
 msgstr "Moderació DMARC"
 
-#: src/mailman/rules/dmarc.py:333
+#: src/mailman/rules/dmarc.py:341
 #, python-brace-format
 msgid "You are not allowed to post to this mailing list From: a domain which publishes a DMARC policy of reject or quarantine, and your message has been automatically rejected.  If you think that your messages are being rejected in error, contact the mailing list owner at ${listowner}."
-msgstr ""
-"No se li permet publicar en aquesta llista de correu de sortida: un domini "
-"que publica una política DMARC de rebuig o quarantena, i el seu missatge "
-"s'ha rebutjat automàticament. Si creu que els seus missatges es rebutgen per "
-"error, poseu-vos en contacte amb el propietari de la llista de correu a "
-"${listowner}."
+msgstr "No se li permet publicar en aquesta llista de correu de sortida: un domini que publica una política DMARC de rebuig o quarantena, i el seu missatge s'ha rebutjat automàticament. Si creu que els seus missatges es rebutgen per error, poseu-vos en contacte amb el propietari de la llista de correu a ${listowner}."
 
 #: src/mailman/rules/emergency.py:34
 msgid ""
@@ -2219,27 +2089,27 @@ msgstr "Capturar missatges que són més grans que un màxim especificat."
 msgid "The message is larger than the {} KB maximum size"
 msgstr "El missatge és més gran que la mida màxima de {} KB"
 
-#: src/mailman/rules/moderation.py:65
+#: src/mailman/rules/moderation.py:69
 msgid "Match messages sent by moderated members."
 msgstr "Seleccionar missatges enviats per membres moderats."
 
-#: src/mailman/rules/moderation.py:93
+#: src/mailman/rules/moderation.py:97
 msgid "The message comes from a moderated member"
 msgstr "El missatge prové d'un membre moderat"
 
-#: src/mailman/rules/moderation.py:108
+#: src/mailman/rules/moderation.py:112
 msgid "The message is not from a list member"
 msgstr "El missatge no és d'un membre de la llista"
 
-#: src/mailman/rules/moderation.py:125
+#: src/mailman/rules/moderation.py:129
 msgid "Match messages sent by nonmembers."
 msgstr "Seleccionar missatges enviats per no membres."
 
-#: src/mailman/rules/moderation.py:140
+#: src/mailman/rules/moderation.py:144
 msgid "No sender was found in the message."
 msgstr "No s'ha trobat cap remitent en el missatge."
 
-#: src/mailman/rules/moderation.py:195
+#: src/mailman/rules/moderation.py:200
 msgid "The sender is in the nonmember {} list"
 msgstr "El remitent és a la llista {} de no membres"
 
@@ -2289,36 +2159,35 @@ msgstr "Una regla que sempre encaixa."
 msgid "Ignoring non-text/plain MIME parts"
 msgstr "Ignorant parts MIME que no són text/plain"
 
-#: src/mailman/runners/command.py:143
+#: src/mailman/runners/command.py:144
 msgid "The results of your email command are provided below.\n"
-msgstr ""
-"Els resultats de la seva comanda de correu es proporcionen a continuació.\n"
+msgstr "Els resultats de la seva comanda de correu es proporcionen a continuació.\n"
 
-#: src/mailman/runners/command.py:187
+#: src/mailman/runners/command.py:188
 msgid "- Original message details:"
 msgstr "- Detalls originals del missatge:"
 
-#: src/mailman/runners/command.py:191
+#: src/mailman/runners/command.py:194
 #, python-brace-format
 msgid "    From: ${from_}"
 msgstr "    De: ${from_}"
 
-#: src/mailman/runners/command.py:192
+#: src/mailman/runners/command.py:195
 #, python-brace-format
 msgid "    Subject: ${subject}"
 msgstr "    Assumpte: ${subject}"
 
-#: src/mailman/runners/command.py:193
+#: src/mailman/runners/command.py:196
 #, python-brace-format
 msgid "    Date: ${date}"
 msgstr "    Data: ${date}"
 
-#: src/mailman/runners/command.py:194
+#: src/mailman/runners/command.py:197
 #, python-brace-format
 msgid "    Message-ID: ${message_id}"
 msgstr "    ID de missatge: ${message_id}"
 
-#: src/mailman/runners/command.py:195
+#: src/mailman/runners/command.py:198
 msgid ""
 "\n"
 "- Results:"
@@ -2326,12 +2195,12 @@ msgstr ""
 "\n"
 "- Resultats:"
 
-#: src/mailman/runners/command.py:209
+#: src/mailman/runners/command.py:212
 #, python-brace-format
 msgid "No such command: ${command_name}"
 msgstr "No existeix tal comanda: ${command_name}"
 
-#: src/mailman/runners/command.py:223
+#: src/mailman/runners/command.py:226
 msgid ""
 "\n"
 "- Unprocessed:"
@@ -2339,7 +2208,7 @@ msgstr ""
 "\n"
 "- Sense processar:"
 
-#: src/mailman/runners/command.py:228
+#: src/mailman/runners/command.py:231
 msgid ""
 "\n"
 "- Ignored:"
@@ -2347,7 +2216,7 @@ msgstr ""
 "\n"
 "- Ignorat:"
 
-#: src/mailman/runners/command.py:231
+#: src/mailman/runners/command.py:234
 msgid ""
 "\n"
 "- Done."
@@ -2355,7 +2224,7 @@ msgstr ""
 "\n"
 "- Fet."
 
-#: src/mailman/runners/command.py:237
+#: src/mailman/runners/command.py:240
 msgid "The results of your email commands"
 msgstr "Els resultats de les vostres comandes de correu"
 
@@ -2425,8 +2294,7 @@ msgid ""
 "Size: ${size} bytes\n"
 "Desc: ${desc}\n"
 msgstr ""
-"S'ha eliminat una part del missatge incompatible amb els resums en text "
-"sense format...\n"
+"S'ha eliminat una part del missatge incompatible amb els resums en text sense format...\n"
 "Nom: ${filename}\n"
 "Tipus: ${ctype}\n"
 "Mida: ${size} bytes\n"
@@ -2437,44 +2305,19 @@ msgid "-------------- next part --------------\n"
 msgstr ""
 
 msgid "domain:admin:notice:new-list.txt"
-msgstr ""
-"S'acaba de crear la llista de correu '${listname}' per a vostè. A "
-"continuació, hi ha informació bàsica sobre la vostra llista de correu. Hi ha "
-"una interfície per correu per als usuaris (no administradors) de la llista; "
-"podeu obtenir informació sobre com utilitzar-la només enviant un missatge "
-"amb la paraula 'help'com a l'assumpte o al cos del missatge, a: "
-"${request_email} Podeu adreçar totes les preguntes a ${site_email}."
+msgstr "S'acaba de crear la llista de correu '${listname}' per a vostè. A continuació, hi ha informació bàsica sobre la vostra llista de correu. Hi ha una interfície per correu per als usuaris (no administradors) de la llista; podeu obtenir informació sobre com utilitzar-la només enviant un missatge amb la paraula 'help'com a l'assumpte o al cos del missatge, a: ${request_email} Podeu adreçar totes les preguntes a ${site_email}."
 
 msgid "help.txt"
-msgstr ""
-"Ajuda per a la llista de correu ${listname} Aquesta és la comanda d'ajuda de "
-"correu 'help' per a la versió ${version} del gestor de llistes GNU Mailman a "
-"${domain}.  A continuació, es descriuen les comandes que podeu enviar per "
-"obtenir informació i controlar la seva subscripció a les llistes de Mailman "
-"en aquest lloc. Les comandes poden estar a la línia de l’assumpte o al cos "
-"del missatge. Les comandes s’han d’enviar a l’adreça "
-"${listname}-request@${domain}. Quant a les descripcions, les paraules amb \""
-"<>\" signifiquen els elements i les paraules clau NECESSARIS i amb \"[ ] "
-"\"denota elements OPCIONALS. No incloguin els \"<>\" o \"[]\" quan utilitzi "
-"les comandes. Les següents comandes són vàlides:    ${commands} Questions i "
-"dubtes per l'atenció d'una persona han de ser enviades a:    ${administrator}"
+msgstr "Ajuda per a la llista de correu ${listname} Aquesta és la comanda d'ajuda de correu 'help' per a la versió ${version} del gestor de llistes GNU Mailman a ${domain}.  A continuació, es descriuen les comandes que podeu enviar per obtenir informació i controlar la seva subscripció a les llistes de Mailman en aquest lloc. Les comandes poden estar a la línia de l’assumpte o al cos del missatge. Les comandes s’han d’enviar a l’adreça ${listname}-request@${domain}. Quant a les descripcions, les paraules amb \"<>\" signifiquen els elements i les paraules clau NECESSARIS i amb \"[ ] \"denota elements OPCIONALS. No incloguin els \"<>\" o \"[]\" quan utilitzi les comandes. Les següents comandes són vàlides:    ${commands} Questions i dubtes per l'atenció d'una persona han de ser enviades a:    ${administrator}"
 
 msgid "list:admin:action:post.txt"
-msgstr ""
-"Com a administrador de la llista, es demana la seva autorització pel següent "
-"enviament a la llista de correu: Llista: $listname De: ${sender_email} "
-"Assumpte: ${subject} El missatge es manté retingut perquè: ${reasons} Per la "
-"seva comoditat, visiteu el vostre tauler per aprovar o denegar la petició."
+msgstr "Com a administrador de la llista, es demana la seva autorització pel següent enviament a la llista de correu: Llista: $listname De: ${sender_email} Assumpte: ${subject} El missatge es manté retingut perquè: ${reasons} Per la seva comoditat, visiteu el vostre tauler per aprovar o denegar la petició."
 
 msgid "list:admin:action:subscribe.txt"
-msgstr ""
-"La vostra autorització és necessària per a una sol·licitud de subscripció a "
-"la llista de correu:    Per:  ${member}    Llista: ${listname}"
+msgstr "La vostra autorització és necessària per a una sol·licitud de subscripció a la llista de correu:    Per:  ${member}    Llista: ${listname}"
 
 msgid "list:admin:action:unsubscribe.txt"
-msgstr ""
-"La vostra autorització és necessària per a l'aprovació d'una sol·licitud de "
-"baixa de llista de correu: Per: ${member} Llista: $listname"
+msgstr "La vostra autorització és necessària per a l'aprovació d'una sol·licitud de baixa de llista de correu: Per: ${member} Llista: $listname"
 
 #, fuzzy
 msgid "list:admin:notice:disable.txt"
@@ -2494,11 +2337,7 @@ msgid "list:admin:notice:subscribe.txt"
 msgstr "${member} s'ha subscrit amb èxit a ${display_name}."
 
 msgid "list:admin:notice:unrecognized.txt"
-msgstr ""
-"El missatge adjunt es va rebre com a rebot, però no es va reconèixer el "
-"format de rebot o no es van poder extreure adreces de membres.  La llista de "
-"correu electrònic s'ha configurat per enviar tots els missatges de rebot no "
-"reconeguts a l'administrador(es) de la llista."
+msgstr "El missatge adjunt es va rebre com a rebot, però no es va reconèixer el format de rebot o no es van poder extreure adreces de membres.  La llista de correu electrònic s'ha configurat per enviar tots els missatges de rebot no reconeguts a l'administrador(es) de la llista."
 
 msgid "list:admin:notice:unsubscribe.txt"
 msgstr "${member} s'ha eliminat de ${display_name}."
@@ -2507,19 +2346,10 @@ msgid "list:member:digest:header.txt"
 msgstr " "
 
 msgid "list:member:digest:masthead.txt"
-msgstr ""
-"Enviar a ${listname} missatges a la llista de distribució ${display_name} . "
-"Per subscriure-us o donar de baixa la subscripció via correu, envieu a "
-"${request_email} un missatge amb la paraula 'help' a l'assumpte o cos. Pot "
-"contactar amb la persona que gestiona la llista a ${propietari_email}\tQuan "
-"respongueu, modifiqueu la línia de l'assumpte de manera que sigui més "
-"específic que \"Re: Contingut de ${display_name} digest ...\""
+msgstr "Enviar a ${listname} missatges a la llista de distribució ${display_name} . Per subscriure-us o donar de baixa la subscripció via correu, envieu a ${request_email} un missatge amb la paraula 'help' a l'assumpte o cos. Pot contactar amb la persona que gestiona la llista a ${propietari_email}\tQuan respongueu, modifiqueu la línia de l'assumpte de manera que sigui més específic que \"Re: Contingut de ${display_name} digest ...\""
 
 msgid "list:member:generic:footer.txt"
-msgstr ""
-"_______________________________________________Llista de correu "
-"${display_name} -- ${listname} Per donar-se de baixa envieu un correu a "
-"${short_listname}-leave@${domain}"
+msgstr "_______________________________________________Llista de correu ${display_name} -- ${listname} Per donar-se de baixa envieu un correu a ${short_listname}-leave@${domain}"
 
 msgid "list:member:regular:header.txt"
 msgstr " "
@@ -2528,99 +2358,38 @@ msgid "list:user:action:invite.txt"
 msgstr ""
 
 msgid "list:user:action:subscribe.txt"
-msgstr ""
-"Confirmació de registre d'adreça de correu electrònic Hola, aquest és el "
-"servidor GNU Mailman de ${domain}. Hem rebut una sol·licitud de registre per "
-"a l'adreça de correu ${user_email}. Abans de poder començar a utilitzar GNU "
-"Mailman en aquest lloc, primer heu de confirmar que aquesta és la vostra "
-"adreça de correu.  Fes-ho responent a aquest missatge mantenint intacte la "
-"capçalera de l’assumpte. Si no desitja registrar aquesta adreça de correu "
-"electrònic, simplement ignora aquesta missatge. Si creu que està sent "
-"subscrit a aquesta llista de forma maliciosa, pot contactar ${owner_email}"
+msgstr "Confirmació de registre d'adreça de correu electrònic Hola, aquest és el servidor GNU Mailman de ${domain}. Hem rebut una sol·licitud de registre per a l'adreça de correu ${user_email}. Abans de poder començar a utilitzar GNU Mailman en aquest lloc, primer heu de confirmar que aquesta és la vostra adreça de correu.  Fes-ho responent a aquest missatge mantenint intacte la capçalera de l’assumpte. Si no desitja registrar aquesta adreça de correu electrònic, simplement ignora aquesta missatge. Si creu que està sent subscrit a aquesta llista de forma maliciosa, pot contactar ${owner_email}"
 
 msgid "list:user:action:unsubscribe.txt"
-msgstr ""
-"Confirmació de baixa de l'adreça de correu Hola, aquest és el servidor GNU "
-"Mailman a ${domain}. Hem rebut una sol·licitud de baixa de l'adreça de "
-"correu electrònic    ${user_email} Abans que GNU Mailman pot donar-la de "
-"baixa, primer ha de confirmar la seva sol·licitud. Podeu fer-ho responent "
-"aquest missatge, mantenint l’encapçalament de Assumpte. Si no voleu donar de "
-"baixa aquesta adreça de correu, simplement ignoreu aquest missatge. Si "
-"creieu que se us ha donat de baixa de la llista de forma maliciosa o que "
-"teniu cap altra pregunta, podeu contactar amb    ${propietari_email}"
+msgstr "Confirmació de baixa de l'adreça de correu Hola, aquest és el servidor GNU Mailman a ${domain}. Hem rebut una sol·licitud de baixa de l'adreça de correu electrònic    ${user_email} Abans que GNU Mailman pot donar-la de baixa, primer ha de confirmar la seva sol·licitud. Podeu fer-ho responent aquest missatge, mantenint l’encapçalament de Assumpte. Si no voleu donar de baixa aquesta adreça de correu, simplement ignoreu aquest missatge. Si creieu que se us ha donat de baixa de la llista de forma maliciosa o que teniu cap altra pregunta, podeu contactar amb    ${propietari_email}"
 
 msgid "list:user:notice:goodbye.txt"
 msgstr " "
 
 msgid "list:user:notice:hold.txt"
-msgstr ""
-"El vostre correu a '${listname}' amb l'assumpte    ${subject} està retingut "
-"fins que el moderador de la llista pugui revisar-lo per a la seva aprovació. "
-"El missatge està retingut perquè: ${reasons} El missatge es publicarà a la "
-"llista o es rebrà notificació de la decisió del moderador."
+msgstr "El vostre correu a '${listname}' amb l'assumpte    ${subject} està retingut fins que el moderador de la llista pugui revisar-lo per a la seva aprovació. El missatge està retingut perquè: ${reasons} El missatge es publicarà a la llista o es rebrà notificació de la decisió del moderador."
 
 msgid "list:user:notice:no-more-today.txt"
-msgstr ""
-"Hem rebut un missatge de la vostra adreça <${sender_email}> per sol·licitar "
-"una resposta automàtica de la llista de correu ${listname}. El número que "
-"hem vist avui: ${count}. Per evitar problemes com ara bucles de correu "
-"electrònic entre robots de correu electrònic, avui no enviarem més "
-"respostes. Si us plau, torneu-ho a provar demà. Si creieu que aquest "
-"missatge és un error o si teniu cap pregunta, poseu-vos en contacte amb el "
-"propietari de la llista a ${owner_email}."
+msgstr "Hem rebut un missatge de la vostra adreça <${sender_email}> per sol·licitar una resposta automàtica de la llista de correu ${listname}. El número que hem vist avui: ${count}. Per evitar problemes com ara bucles de correu electrònic entre robots de correu electrònic, avui no enviarem més respostes. Si us plau, torneu-ho a provar demà. Si creieu que aquest missatge és un error o si teniu cap pregunta, poseu-vos en contacte amb el propietari de la llista a ${owner_email}."
 
 msgid "list:user:notice:post.txt"
-msgstr ""
-"El seu missatge titulat ${subject} va ser rebut correctament per la llista "
-"de correu ${display} _name."
+msgstr "El seu missatge titulat ${subject} va ser rebut correctament per la llista de correu ${display} _name."
 
 msgid "list:user:notice:probe.txt"
-msgstr ""
-"Aquest és un missatge de sonda.  Podeu ignorar aquest missatge. La llista de "
-"correu ${listname} ha rebut diversos rebots de la vostra part, indicant que "
-"pot haver-hi un problema al enviar missatges a ${sender_email}. Una mostra "
-"s'adjunta a continuació.  Consulteu aquest missatge per assegurar-vos que no "
-"hi hagi problemes amb la seva adreça de correu.  Potser voldreu consultar "
-"amb el vostre administrador de correu per obtenir més ajuda. No heu de fer "
-"res per seguir sent un membre actiu de la llista de correu. Si teniu cap "
-"pregunta o problema, podeu fer-ho contactant amb el propietari de la llista "
-"de distribució a    ${owner_email}"
+msgstr "Aquest és un missatge de sonda.  Podeu ignorar aquest missatge. La llista de correu ${listname} ha rebut diversos rebots de la vostra part, indicant que pot haver-hi un problema al enviar missatges a ${sender_email}. Una mostra s'adjunta a continuació.  Consulteu aquest missatge per assegurar-vos que no hi hagi problemes amb la seva adreça de correu.  Potser voldreu consultar amb el vostre administrador de correu per obtenir més ajuda. No heu de fer res per seguir sent un membre actiu de la llista de correu. Si teniu cap pregunta o problema, podeu fer-ho contactant amb el propietari de la llista de distribució a    ${owner_email}"
 
 msgid "list:user:notice:refuse.txt"
-msgstr ""
-"La seva sol·licitud a la llista de correu ${listname}      ${request} has "
-"estat rebutjada pel moderador de la llista.  El moderador va donar el motiu "
-"següent per rebutjar la seva petició: \"${reason}\" Qualsevol pregunta o "
-"comentari ha de dirigir-se a l'administrador de la llista:    ${owner} _email"
+msgstr "La seva sol·licitud a la llista de correu ${listname}      ${request} has estat rebutjada pel moderador de la llista.  El moderador va donar el motiu següent per rebutjar la seva petició: \"${reason}\" Qualsevol pregunta o comentari ha de dirigir-se a l'administrador de la llista:    ${owner} _email"
 
 msgid "list:user:notice:rejected.txt"
-msgstr ""
-"El seu missatge a la llista de correu ${listname} s'ha rebutjat per les "
-"següents raons: ${reasons} S'adjunta el missatge original rebut per Mailman."
+msgstr "El seu missatge a la llista de correu ${listname} s'ha rebutjat per les següents raons: ${reasons} S'adjunta el missatge original rebut per Mailman."
 
 #, fuzzy
 msgid "list:user:notice:warning.txt"
-msgstr ""
-"Aquest és un missatge de sonda.  Podeu ignorar aquest missatge. La llista de "
-"correu ${listname} ha rebut diversos rebots de la vostra part, indicant que "
-"pot haver-hi un problema al enviar missatges a ${sender_email}. Una mostra "
-"s'adjunta a continuació.  Consulteu aquest missatge per assegurar-vos que no "
-"hi hagi problemes amb la seva adreça de correu.  Potser voldreu consultar "
-"amb el vostre administrador de correu per obtenir més ajuda. No heu de fer "
-"res per seguir sent un membre actiu de la llista de correu. Si teniu cap "
-"pregunta o problema, podeu fer-ho contactant amb el propietari de la llista "
-"de distribució a    ${owner_email}"
+msgstr "Aquest és un missatge de sonda.  Podeu ignorar aquest missatge. La llista de correu ${listname} ha rebut diversos rebots de la vostra part, indicant que pot haver-hi un problema al enviar missatges a ${sender_email}. Una mostra s'adjunta a continuació.  Consulteu aquest missatge per assegurar-vos que no hi hagi problemes amb la seva adreça de correu.  Potser voldreu consultar amb el vostre administrador de correu per obtenir més ajuda. No heu de fer res per seguir sent un membre actiu de la llista de correu. Si teniu cap pregunta o problema, podeu fer-ho contactant amb el propietari de la llista de distribució a    ${owner_email}"
 
 msgid "list:user:notice:welcome.txt"
-msgstr ""
-"Benvingut a la llista de correu \"${display_name} \"! Per a publicar en "
-"aquesta llista, envieu el vostre correu electrònic a:  ${listname}. Podeu "
-"donar-vos de baixa o fer ajustos a les vostres opcions per correu electrònic "
-"enviant un missatge a: ${request_email} amb la paraula 'help' en l'assumpte "
-"o el cos (no inclogueu les cometes) i rebreu un missatge amb instruccions. "
-"Necessitareu la vostra contrasenya per a canviar les opcions, però, a "
-"efectes de seguretat, aquesta contrasenya no s’hi inclourà. Si heu oblidat "
-"la contrasenya, haureu de restablir-la mitjançant la interfície d'usuari web."
+msgstr "Benvingut a la llista de correu \"${display_name} \"! Per a publicar en aquesta llista, envieu el vostre correu electrònic a:  ${listname}. Podeu donar-vos de baixa o fer ajustos a les vostres opcions per correu electrònic enviant un missatge a: ${request_email} amb la paraula 'help' en l'assumpte o el cos (no inclogueu les cometes) i rebreu un missatge amb instruccions. Necessitareu la vostra contrasenya per a canviar les opcions, però, a efectes de seguretat, aquesta contrasenya no s’hi inclourà. Si heu oblidat la contrasenya, haureu de restablir-la mitjançant la interfície d'usuari web."
 
 #~ msgid ""
 #~ "    Start a runner.\n"

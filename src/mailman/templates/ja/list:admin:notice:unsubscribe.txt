@@ -1,1 +1,1 @@
-${member} は ${display_name} から削除されました。
+$member は $display_name から削除されました。

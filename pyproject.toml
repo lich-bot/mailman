@@ -27,7 +27,7 @@ dependencies = [
     "aiosmtpd>=1.4.3",
     "alembic>=1.6.2,!=1.7.0",
     "atpublic",
-    "authheaders>=0.15.2",
+    "authheaders>=0.16",
     "authres>=1.0.1",
     "click>=8.0.0",
     "dnspython>=1.14.0",
